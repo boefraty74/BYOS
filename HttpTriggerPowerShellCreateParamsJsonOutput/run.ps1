@@ -83,6 +83,7 @@ if($rB.userParam2){ $Body.userParam2 = $rB.userParam2}
 if($rB.resourceGroupName){ $Body.resourceGroupName = $rB.resourceGroupName}
 if($rB.storageName){ $Body.storageName = $rB.storageName}
 if($rB.storagePrimeKey){ $Body.storagePrimeKey = $rB.storagePrimeKey}
+if($rB.vaultName){ $Body.vaultName = $rB.vaultName}
 if($rB.storageRootURL){ $Body.storageRootURL = $rB.storageRootURL}
 if($rB.templateContainer){ $Body.templateContainer = $rB.templateContainer}
 if($rB.ADappID){ $Body.ADappID = $rB.ADappID}
