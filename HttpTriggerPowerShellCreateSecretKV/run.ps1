@@ -44,6 +44,7 @@ $secretvalue = ConvertTo-SecureString -String $secretString -AsPlainText -Force
 Set-AzureKeyVaultSecret -VaultName $vaultName -Name $newSecretName -SecretValue $secretvalue
 
 
+Remove-AzureRmAccount
 
 #output 
 Out-File -Encoding Ascii -FilePath $res -inputObject "Done with $newSecretName and $secretString"
