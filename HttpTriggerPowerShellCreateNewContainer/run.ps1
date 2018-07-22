@@ -48,6 +48,6 @@ $outStr = $outStr + "; And " + $copyBlobName + " copied inside"
 
 write-host $outStr
 #todo Write-EventLog 
-Remove-AzureRmAccount
+#Remove-AzureRmAccount
 
 Out-File -Encoding Ascii -FilePath $res -inputObject $outStr
