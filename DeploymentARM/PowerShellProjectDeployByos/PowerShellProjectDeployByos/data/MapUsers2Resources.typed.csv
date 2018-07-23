@@ -1,0 +1,201 @@
+PartitionKey,RowKey,Timestamp,Company,Company@type,DisplayName,DisplayName@type,GUID,GUID@type,Token,Token@type
+AdvancedChicletSlicer1448559807355,4,2018-07-01T10:34:14.739Z,Microsoft,Edm.String,AdvancedChicletSlicer,Edm.String,AdvancedChicletSlicer1448559807355,Edm.String,Microsoft,Edm.String
+Aquarium1442671919391,67,2018-07-01T10:34:14.744Z,Enlighten Designs,Edm.String,Enlighten Aquarium,Edm.String,Aquarium1442671919391,Edm.String,Enlighten Designs,Edm.String
+AsterPlot1443303142064,10,2018-07-01T10:34:14.710Z,Microsoft,Edm.String,AsterPlot,Edm.String,AsterPlot1443303142064,Edm.String,Microsoft,Edm.String
+AttributeSlicer1652434005853,11,2018-07-01T10:34:14.690Z,MSR,Edm.String,Attribute Slicer,Edm.String,AttributeSlicer1652434005853,Edm.String,MSR,Edm.String
+BarChartF5983CEA542C47889C9DE852B430DE5F,103,2018-07-01T10:34:14.749Z,Microsoft,Edm.String,Horizontal Bar Chart,Edm.String,BarChartF5983CEA542C47889C9DE852B430DE5F,Edm.String,Microsoft,Edm.String
+BowtieChart1465021618681,13,2018-07-01T10:34:14.716Z,MAQ LLC,Edm.String,Bowtie Chart by MAQ Software,Edm.String,BowtieChart1465021618681,Edm.String,MAQ LLC,Edm.String
+BoxWhisker1449771136386,16,2018-07-01T10:34:14.716Z,Brad Sarsfield,Edm.String,Box and Whisker(Brad),Edm.String,BoxWhisker1449771136386,Edm.String,Brad Sarsfield,Edm.String
+BoxWhiskerChart1455240051538,14,2018-07-01T10:34:14.748Z,Jan Pieter Posthuma,Edm.String,Box and Whisker chart,Edm.String,BoxWhiskerChart1455240051538,Edm.String,Jan Pieter Posthuma,Edm.String
+BoxandWhiskerByMAQ1823AD39DT234AB532063E128AX,15,2018-07-01T10:34:14.721Z,MAQ LLC,Edm.String,Box and Whisker chart by MAQ Software,Edm.String,BoxandWhiskerByMAQ1823AD39DT234AB532063E128AX,Edm.String,MAQ LLC,Edm.String
+BrickChart1454871868044,17,2018-07-01T10:34:14.719Z,MAQ LLC,Edm.String,Brick Chart by MAQ Software,Edm.String,BrickChart1454871868044,Edm.String,MAQ LLC,Edm.String
+BrushChart1447292826280,3,2018-07-01T10:34:14.757Z,Cambridge Technology Partners,Edm.String,Advanced Time Slicer,Edm.String,BrushChart1447292826280,Edm.String,Cambridge Technology Partners,Edm.String
+BulletChart1443347686880,21,2018-07-01T10:34:14.724Z,Microsoft,Edm.String,Bullet Chart,Edm.String,BulletChart1443347686880,Edm.String,Microsoft,Edm.String
+CalendarVisual1442774095659,24,2018-07-01T10:34:14.758Z,Elastacloud Limited,Edm.String,Calendar Visual,Edm.String,CalendarVisual1442774095659,Edm.String,Elastacloud Limited,Edm.String
+CalendarVisualA45056645E4E428B9D26EF971839A6B5,23,2018-07-01T10:34:14.762Z,"Tallan, Inc",Edm.String,Calendar by Tallan,Edm.String,CalendarVisualA45056645E4E428B9D26EF971839A6B5,Edm.String,"Tallan, Inc",Edm.String
+CardBrowser8D7CFFDA2E7E400C9474F41B9EDBBA58,26,2018-07-01T10:34:14.767Z,MSR,Edm.String,Card Browser,Edm.String,CardBrowser8D7CFFDA2E7E400C9474F41B9EDBBA58,Edm.String,MSR,Edm.String
+ChicletSlicer1448559807354,32,2018-07-01T10:34:14.768Z,Microsoft,Edm.String,Chiclet Slicer,Edm.String,ChicletSlicer1448559807354,Edm.String,Microsoft,Edm.String
+ChordChart1444757060245,33,2018-07-01T10:34:14.775Z,Microsoft,Edm.String,Chord,Edm.String,ChordChart1444757060245,Edm.String,Microsoft,Edm.String
+CircularGauge1458053128559,34,2018-07-01T10:34:14.743Z,MAQ LLC,Edm.String,Circular Gauge by MAQ Software,Edm.String,CircularGauge1458053128559,Edm.String,MAQ LLC,Edm.String
+ClusterMap1652434605854,35,2018-07-01T10:34:14.728Z,MSR,Edm.String,Cluster Map,Edm.String,ClusterMap1652434605854,Edm.String,MSR,Edm.String
+ClusteringUsingOPTICSCAD9384DAA1042E78771F55A0BD811D8,37,2018-07-01T10:34:14.816Z,MAQ Software,Edm.String,Clustering using OPTICS by MAQ Software,Edm.String,ClusteringUsingOPTICSCAD9384DAA1042E78771F55A0BD811D8,Edm.String,MAQ Software,Edm.String
+CollabionDonut1479946737541,53,2018-07-01T10:34:14.733Z,Collabion,Edm.String,Donut 3D Chart by Collabion,Edm.String,CollabionDonut1479946737541,Edm.String,Collabion,Edm.String
+CollabionPie1482191307239,135,2018-07-01T10:34:14.770Z,Collabion,Edm.String,Pie 3D,Edm.String,CollabionPie1482191307239,Edm.String,Collabion,Edm.String
+D3JSVisual_PBI_CV_CDD143DEC3A145E7A507B562AF6CF490,47,2018-07-01T10:34:14.730Z,Jan Pieter Posthuma,Edm.String,D3.js Visual,Edm.String,D3JSVisual_PBI_CV_CDD143DEC3A145E7A507B562AF6CF490,Edm.String,Jan Pieter Posthuma,Edm.String
+DatePickerFilter67ACDAFEF8744EB0A088E040B0E5FED9,50,2018-07-01T10:34:14.776Z,MAQ LLC,Edm.String,DatePickerFilter,Edm.String,DatePickerFilter67ACDAFEF8744EB0A088E040B0E5FED9,Edm.String,MAQ LLC,Edm.String
+DonutChartGMO1461469098694,148,2018-07-01T10:34:14.740Z,MAQ LLC,Edm.String,Ring Chart by MAQ Software,Edm.String,DonutChartGMO1461469098694,Edm.String,MAQ LLC,Edm.String
+DotPlot1442374105856,54,2018-07-01T10:34:14.737Z,Microsoft,Edm.String,Dot Plot,Edm.String,DotPlot1442374105856,Edm.String,Microsoft,Edm.String
+DotPlotByMAQ1823AB39DB234AB522063E728AD,55,2018-07-01T10:34:14.775Z,MAQ LLC,Edm.String,Dot Plot by MAQ Software,Edm.String,DotPlotByMAQ1823AB39DB234AB522063E728AD,Edm.String,MAQ LLC,Edm.String
+DumbbellChartB13A88DFEE724350B46BCF0EFA5B6E321,64,2018-07-01T10:34:14.738Z,MAQ Software,Edm.String,Dumbbell Chart by MAQ Software,Edm.String,DumbbellChartB13A88DFEE724350B46BCF0EFA5B6E321,Edm.String,MAQ Software,Edm.String
+EnhancedScatterChart1443994985041,66,2018-07-01T10:34:14.778Z,Microsoft,Edm.String,Enhanced Scatter,Edm.String,EnhancedScatterChart1443994985041,Edm.String,Microsoft,Edm.String
+FacetKey1642434105454,74,2018-07-01T10:34:14.778Z,MSR,Edm.String,Facet Key,Edm.String,FacetKey1642434105454,Edm.String,MSR,Edm.String
+FilterByList507A2DBEC31244C8AAABDE9BA541F723,75,2018-07-01T10:34:14.745Z,DevScope,Edm.String,Filter by List,Edm.String,FilterByList507A2DBEC31244C8AAABDE9BA541F723,Edm.String,DevScope,Edm.String
+ForceGraph1449359463895,81,2018-07-01T10:34:14.786Z,Microsoft,Edm.String,Force-Directed Graph,Edm.String,ForceGraph1449359463895,Edm.String,Microsoft,Edm.String
+ForecastUsingNeuralNetworkC3FF19A2F6084F9DB72C16B27773958,82,2018-07-01T10:34:14.753Z,MAQ Software,Edm.String,Forecast using Neural Network by MAQ Software,Edm.String,ForecastUsingNeuralNetworkC3FF19A2F6084F9DB72C16B27773958,Edm.String,MAQ Software,Edm.String
+Gantt1448688115699,87,2018-07-01T10:34:14.753Z,Microsoft,Edm.String,Gantt,Edm.String,Gantt1448688115699,Edm.String,Microsoft,Edm.String
+GanttChartByMAQSoftware1448688115701,88,2018-07-01T10:34:14.792Z,MAQ LLC,Edm.String,Gantt Chart By MAQ Software,Edm.String,GanttChartByMAQSoftware1448688115701,Edm.String,MAQ LLC,Edm.String
+GapAnalysis1451400925949,90,2018-07-01T10:34:14.746Z,AllAboutData,Edm.String,GapAnalysis,Edm.String,GapAnalysis1451400925949,Edm.String,AllAboutData,Edm.String
+GlobeMap1447669447625,92,2018-07-01T10:34:14.795Z,Microsoft,Edm.String,Globe Map,Edm.String,GlobeMap1447669447625,Edm.String,Microsoft,Edm.String
+HierarchySlicer1458836712039,100,2018-07-01T10:34:14.795Z,Jan Pieter Posthuma,Edm.String,HierarchySlicer,Edm.String,HierarchySlicer1458836712039,Edm.String,Jan Pieter Posthuma,Edm.String
+Histogram1445664487616,101,2018-07-01T10:34:14.760Z,Microsoft,Edm.String,Histogram Chart,Edm.String,Histogram1445664487616,Edm.String,Microsoft,Edm.String
+HorizontalFunnel1449177164235,104,2018-07-01T10:34:14.768Z,MAQ LLC,Edm.String,Horizontal Funnel by MAQ Software,Edm.String,HorizontalFunnel1449177164235,Edm.String,MAQ LLC,Edm.String
+ImageGrid_FC5183B9_926C_45E0_B5F7_0CE9EAF1DA9B,109,2018-07-01T10:34:14.801Z,Fredrik HedenstrAm,Edm.String,Image Grid,Edm.String,ImageGrid_FC5183B9_926C_45E0_B5F7_0CE9EAF1DA9B,Edm.String,Fredrik HedenstrAm,Edm.String
+ImgViewerVisual1455487926945,111,2018-07-01T10:34:14.797Z,Lukasz Pawlowski,Edm.String,Image Viewer,Edm.String,ImgViewerVisual1455487926945,Edm.String,Lukasz Pawlowski,Edm.String
+KPIColumn1823AB39DB23410928ADF752BCB2A457,116,2018-07-01T10:34:14.765Z,MAQ LLC,Edm.String,KPI Column by MAQ Software,Edm.String,KPIColumn1823AB39DB23410928ADF752BCB2A457,Edm.String,MAQ LLC,Edm.String
+KPIGrid39FBAB0336346DBB68AB522063E7241,117,2018-07-01T10:34:14.809Z,MAQ LLC,Edm.String,KPI Grid,Edm.String,KPIGrid39FBAB0336346DBB68AB522063E7241,Edm.String,MAQ LLC,Edm.String
+KPIStatusWithHistory1446562283967,118,2018-07-01T10:34:14.784Z,Fredrik HedenstrAm,Edm.String,KPI Indicator,Edm.String,KPIStatusWithHistory1446562283967,Edm.String,Fredrik HedenstrAm,Edm.String
+LineDotChart1460463831201,122,2018-07-01T10:34:14.772Z,Microsoft,Edm.String,LineDot Chart,Edm.String,LineDotChart1460463831201,Edm.String,Microsoft,Edm.String
+LinearGauge1450736844786,121,2018-07-01T10:34:14.812Z,MAQ LLC,Edm.String,Linear Gauge by MAQ Software,Edm.String,LinearGauge1450736844786,Edm.String,MAQ LLC,Edm.String
+LongTextViewer1453740445633,124,2018-07-01T10:34:14.809Z,Lukasz Pawlowski,Edm.String,Long Text Viewer,Edm.String,LongTextViewer1453740445633,Edm.String,Lukasz Pawlowski,Edm.String
+MekkoChart1449744733038,127,2018-07-01T10:34:14.817Z,Microsoft,Edm.String,Mekko Chart,Edm.String,MekkoChart1449744733038,Edm.String,Microsoft,Edm.String
+NetworkNavigator1550434005853,129,2018-07-01T10:34:14.816Z,MSR,Edm.String,Network Navigator Chart,Edm.String,NetworkNavigator1550434005853,Edm.String,MSR,Edm.String
+PBI_3AGSystems_0B9C9FBA_15A2_4A94_8AE4_8F778869B190,41,2018-07-01T10:34:14.777Z,3AG Systems,Edm.String,Column chart with variance,Edm.String,PBI_3AGSystems_0B9C9FBA_15A2_4A94_8AE4_8F778869B190,Edm.String,3AG Systems,Edm.String
+PBI_CV_16948668_E17D_454B_8664_2F2C470EA8C1,136,2018-07-01T10:34:14.782Z,Margarida Prozil Vieita,Edm.String,Play Axis (Dynamic Slicer),Edm.String,PBI_CV_16948668_E17D_454B_8664_2F2C470EA8C1,Edm.String,Margarida Prozil Vieita,Edm.String
+PBI_CV_25997FEB_F466_44FA_B562_AC4063283C4C,164,2018-07-01T10:34:14.783Z,OKViz,Edm.String,Sparkline by OkViz,Edm.String,PBI_CV_25997FEB_F466_44FA_B562_AC4063283C4C,Edm.String,OKViz,Edm.String
+PBI_CV_309E6B47_39A5_4681_808F_132AFB230860,94,2018-07-01T10:34:14.785Z,MAQ LLC,Edm.String,Grid by MAQ Software,Edm.String,PBI_CV_309E6B47_39A5_4681_808F_132AFB230860,Edm.String,MAQ LLC,Edm.String
+PBI_CV_309E6B47_39A5_4681_808F_132AFB230872,178,2018-07-01T10:34:14.821Z,MAQ LLC,Edm.String,Thermometer by MAQ Software,Edm.String,PBI_CV_309E6B47_39A5_4681_808F_132AFB230872,Edm.String,MAQ LLC,Edm.String
+PBI_CV_32852E50B30D4D70ACC1C55C87F71ED0,5,2018-07-01T10:34:14.783Z,Managility,Edm.String,Agility Planning Matrix Light,Edm.String,PBI_CV_32852E50B30D4D70ACC1C55C87F71ED0,Edm.String,Managility,Edm.String
+PBI_CV_3C80B1F2_09AF_4123_8E99_C3CBC46B23E0,63,2018-07-01T10:34:14.791Z,Microsoft,Edm.String,Dual KPI,Edm.String,PBI_CV_3C80B1F2_09AF_4123_8E99_C3CBC46B23E0,Edm.String,Microsoft,Edm.String
+PBI_CV_3EEA6E26_A754_4ECA_BE51_C93859851FB2,9,2018-07-01T10:34:14.791Z,Microsoft,Edm.String,Association rules,Edm.String,PBI_CV_3EEA6E26_A754_4ECA_BE51_C93859851FB2,Edm.String,Microsoft,Edm.String
+PBI_CV_522F2011_DD5A_44D2_A8ED_456F3931DF77,44,2018-07-01T10:34:14.834Z,SnagR Software Ltd,Edm.String,CrossTab by SnagR ,Edm.String,PBI_CV_522F2011_DD5A_44D2_A8ED_456F3931DF77,Edm.String,SnagR Software Ltd,Edm.String
+PBI_CV_658497A5_7E34_4F94_A51F_4E2213BB9051,157,2018-07-01T10:34:14.829Z,Frank Thomson ,Edm.String,ScheduleView,Edm.String,PBI_CV_658497A5_7E34_4F94_A51F_4E2213BB9051,Edm.String,Frank Thomson ,Edm.String
+PBI_CV_73744D90_4DC9_4F18_8BA5_EE8FA5C98035,113,2018-07-01T10:34:14.835Z,Microsoft,Edm.String,Infographic Designer,Edm.String,PBI_CV_73744D90_4DC9_4F18_8BA5_EE8FA5C98035,Edm.String,Microsoft,Edm.String
+PBI_CV_7B952816_A48F_49B4_9E13_15E3BB2C0337,27,2018-07-01T10:34:14.796Z,OKViz,Edm.String,Card with States by OKViz,Edm.String,PBI_CV_7B952816_A48F_49B4_9E13_15E3BB2C0337,Edm.String,OKViz,Edm.String
+PBI_CV_7BD71041_0FDE_423E_BAB2_9804ACC742E8_HTML,36,2018-07-01T10:34:14.800Z,Microsoft,Edm.String,Clustering,Edm.String,PBI_CV_7BD71041_0FDE_423E_BAB2_9804ACC742E8_HTML,Edm.String,Microsoft,Edm.String
+PBI_CV_7C9E2F85_7EFC_44EF_8632_1D27FE76F639,126,2018-07-01T10:34:14.803Z,Luke Kubat,Edm.String,Measure Slicer,Edm.String,PBI_CV_7C9E2F85_7EFC_44EF_8632_1D27FE76F639,Edm.String,Luke Kubat,Edm.String
+PBI_CV_807533A8_7DBB_41E8_AF46_0450D3447E61,51,2018-07-01T10:34:14.809Z,Microsoft,Edm.String,Decision Tree Chart,Edm.String,PBI_CV_807533A8_7DBB_41E8_AF46_0450D3447E61,Edm.String,Microsoft,Edm.String
+PBI_CV_815282F9_27F5_4950_9430_E910E0A8DB6A,172,2018-07-01T10:34:14.839Z,OKViz,Edm.String,Synoptic Panel by OKViz,Edm.String,PBI_CV_815282F9_27F5_4950_9430_E910E0A8DB6A,Edm.String,OKViz,Edm.String
+PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196,108,2018-07-01T10:34:14.847Z,CloudScope,Edm.String,Image by CloudScope,Edm.String,PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196,Edm.String,CloudScope,Edm.String
+PBI_CV_886A053E_9DFD_4EA0_A47D_CCAEB89AF969,25,2018-07-01T10:34:14.849Z,OKViz,Edm.String,Candlestick by OkViz,Edm.String,PBI_CV_886A053E_9DFD_4EA0_A47D_CCAEB89AF969,Edm.String,OKViz,Edm.String
+PBI_CV_8EDDC07B_EE79_4418_A84C_D73897C0E21F_HTML_work,181,2018-07-01T10:34:14.844Z,Microsoft,Edm.String,Time Series Forecasting Chart,Edm.String,PBI_CV_8EDDC07B_EE79_4418_A84C_D73897C0E21F_HTML_work,Edm.String,Microsoft,Edm.String
+PBI_CV_8EDDC07B_TBATS,83,2018-07-01T10:34:14.812Z,Microsoft,Edm.String,Forecasting TBATS,Edm.String,PBI_CV_8EDDC07B_TBATS,Edm.String,Microsoft,Edm.String
+PBI_CV_9053509D_D461_463A_B485_CE9F6AB0F13C,166,2018-07-01T10:34:14.847Z,Microsoft,Edm.String,Stars,Edm.String,PBI_CV_9053509D_D461_463A_B485_CE9F6AB0F13C,Edm.String,Microsoft,Edm.String
+PBI_CV_9272D058_BEA0_476A_B090_A712545F92FA,22,2018-07-01T10:34:14.858Z,OKViz,Edm.String,Bullet Chart by OkViz,Edm.String,PBI_CV_9272D058_BEA0_476A_B090_A712545F92FA,Edm.String,OKViz,Edm.String
+PBI_CV_94E55AB3_5D45_4B62_A49D_19E2109AA028,123,2018-07-01T10:34:14.888Z,Jon Gallant,Edm.String,Liquid Fill Gauge,Edm.String,PBI_CV_94E55AB3_5D45_4B62_A49D_19E2109AA028,Edm.String,Jon Gallant,Edm.String
+PBI_CV_967A08ED_59CD_405F_B41A_8CE2050AD30E,38,2018-07-01T10:34:14.819Z,Microsoft,Edm.String,Clustering With Outliers,Edm.String,PBI_CV_967A08ED_59CD_405F_B41A_8CE2050AD30E,Edm.String,Microsoft,Edm.String
+PBI_CV_9D783E0D_2610_4C22_9576_88AD092AB59E,165,2018-07-01T10:34:14.814Z,Microsoft,Edm.String,Spline chart,Edm.String,PBI_CV_9D783E0D_2610_4C22_9576_88AD092AB59E,Edm.String,Microsoft,Edm.String
+PBI_CV_A06338A2_89CC_4AD7_885A_A321D6AFF1EA,77,2018-07-01T10:34:14.870Z,Microsoft,Edm.String,FlexAxisChart,Edm.String,PBI_CV_A06338A2_89CC_4AD7_885A_A321D6AFF1EA,Edm.String,Microsoft,Edm.String
+PBI_CV_AD348DC9_41C4_4867_B19O_53F9RDC6IEAS_HTML,84,2018-07-01T10:34:14.821Z,Microsoft,Edm.String,Forecasting with ARIMA,Edm.String,PBI_CV_AD348DC9_41C4_4867_B19O_53F9RDC6IEAS_HTML,Edm.String,Microsoft,Edm.String
+PBI_CV_C7EC95FF_9C47_4A9B_AC8A_D519AE191B94,107,2018-07-01T10:34:14.878Z,James Dales,Edm.String,Icon Map,Edm.String,PBI_CV_C7EC95FF_9C47_4A9B_AC8A_D519AE191B94,Edm.String,James Dales,Edm.String
+PBI_CV_CAD60C71_FAD5_4B59_A498_A7FB0DDC7A2B,180,2018-07-01T10:34:14.880Z,Microsoft,Edm.String,Time series decomposition chart,Edm.String,PBI_CV_CAD60C71_FAD5_4B59_A498_A7FB0DDC7A2B,Edm.String,Microsoft,Edm.String
+PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C,125,2018-07-01T10:34:14.820Z,Mapbox,Edm.String,Mapbox Viz,Edm.String,PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C,Edm.String,Mapbox,Edm.String
+PBI_CV_ED2AEAFC_5929_4D92_A6E8_CBDCD4932759,76,2018-07-01T10:34:14.884Z,KPMG ,Edm.String,FinRepPoC,Edm.String,PBI_CV_ED2AEAFC_5929_4D92_A6E8_CBDCD4932759,Edm.String,KPMG ,Edm.String
+PBI_CV_EED04B38_70C9_4723_9C08_538DDC65A5FD,106,2018-07-01T10:34:14.824Z,Microsoft,Edm.String,HTML-text-viewer,Edm.String,PBI_CV_EED04B38_70C9_4723_9C08_538DDC65A5FD,Edm.String,Microsoft,Edm.String
+PBI_CV_F8245BAE_FD3C_4553_91B7_DA42511A53BA,80,2018-07-01T10:34:14.829Z,Microsoft,Edm.String,Flywheel,Edm.String,PBI_CV_F8245BAE_FD3C_4553_91B7_DA42511A53BA,Edm.String,Microsoft,Edm.String
+PBI_CV_FC22EF20_6A7C_4F30_B29B_144CD82E5279,42,2018-07-01T10:34:14.889Z,Microsoft,Edm.String,Correlation plot,Edm.String,PBI_CV_FC22EF20_6A7C_4F30_B29B_144CD82E5279,Edm.String,Microsoft,Edm.String
+PBI_CV_FFFE680D_D220_4F62_B16C_C7B5C5732654,177,2018-07-01T10:34:14.895Z,MAQ LLC,Edm.String,Text Wrapper by MAQ Software,Edm.String,PBI_CV_FFFE680D_D220_4F62_B16C_C7B5C5732654,Edm.String,MAQ LLC,Edm.String
+PercentileChart1450286532448,134,2018-07-01T10:34:14.832Z,John Keech,Edm.String,Percentile Chart,Edm.String,PercentileChart1450286532448,Edm.String,John Keech,Edm.String
+PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A,139,2018-07-01T10:34:14.838Z,Microsoft,Edm.String,PowerApps (Preview),Edm.String,PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A,Edm.String,Microsoft,Edm.String
+PulseChart1459209850231,140,2018-07-01T10:34:14.898Z,Microsoft,Edm.String,Pulse Chart,Edm.String,PulseChart1459209850231,Edm.String,Microsoft,Edm.String
+PyramidChartCollabion1473456433387,141,2018-07-01T10:34:14.840Z,Collabion,Edm.String,Pyramid 3D Chart by Collabion,Edm.String,PyramidChartCollabion1473456433387,Edm.String,Collabion,Edm.String
+RHTML_FUNNEL_978302916642,85,2018-07-01T10:34:14.900Z,Microsoft,Edm.String,Funnel plot,Edm.String,RHTML_FUNNEL_978302916642,Edm.String,Microsoft,Edm.String
+RadarChart1446119667547,145,2018-07-01T10:34:14.908Z,Microsoft,Edm.String,Radar Chart,Edm.String,RadarChart1446119667547,Edm.String,Microsoft,Edm.String
+SandDance1448759247246,152,2018-07-01T10:34:14.849Z,Microsoft,Edm.String,SandDance,Edm.String,SandDance1448759247246,Edm.String,Microsoft,Edm.String
+Sankey1452239004508,154,2018-07-01T10:34:14.855Z,Brad Sarsfield,Edm.String,Sankey with Labels,Edm.String,Sankey1452239004508,Edm.String,Brad Sarsfield,Edm.String
+SankeyBarchart1453612063812,155,2018-07-01T10:34:14.903Z,Brad Sarsfield,Edm.String,SankeyBarchart,Edm.String,SankeyBarchart1453612063812,Edm.String,Brad Sarsfield,Edm.String
+SankeyDiagram1446463184954,153,2018-07-01T10:34:14.900Z,Microsoft,Edm.String,Sankey Chart,Edm.String,SankeyDiagram1446463184954,Edm.String,Microsoft,Edm.String
+ScrollingTextVisual1448795304508,158,2018-07-01T10:34:14.856Z,Fredrik HedenstrAm,Edm.String,Scroller,Edm.String,ScrollingTextVisual1448795304508,Edm.String,Fredrik HedenstrAm,Edm.String
+SlopeChartRHTMLA849C818E46E4556B53BF9C8E9E82798,160,2018-07-01T10:34:14.911Z,MAQ Software,Edm.String,Slope chart by MAQ Software,Edm.String,SlopeChartRHTMLA849C818E46E4556B53BF9C8E9E82798,Edm.String,MAQ Software,Edm.String
+SmartFilterBySQLBI1458262140625,161,2018-07-01T10:34:14.867Z,OKViz,Edm.String,Smart Filter by OKViz,Edm.String,SmartFilterBySQLBI1458262140625,Edm.String,OKViz,Edm.String
+Sparkline1444636326814,163,2018-07-01T10:34:14.872Z,Prologika LLC,Edm.String,Sparkline,Edm.String,Sparkline1444636326814,Edm.String,Prologika LLC,Edm.String
+StockChart1464746768122,188,2018-07-01T10:34:14.918Z,MAQ LLC,Edm.String,Trading Chart by MAQ Software,Edm.String,StockChart1464746768122,Edm.String,MAQ LLC,Edm.String
+StreamGraph1446659696222,167,2018-07-01T10:34:14.915Z,Microsoft,Edm.String,Stream Graph,Edm.String,StreamGraph1446659696222,Edm.String,Microsoft,Edm.String
+StrippetBrowser16424341054522,168,2018-07-01T10:34:14.888Z,MSR,Edm.String,Strippets Browser,Edm.String,StrippetBrowser16424341054522,Edm.String,MSR,Edm.String
+Sunburst1445472000808,169,2018-07-01T10:34:14.886Z,Microsoft,Edm.String,Sunburst,Edm.String,Sunburst1445472000808,Edm.String,Microsoft,Edm.String
+SuperBubbles1443113639239,20,2018-07-01T10:34:14.923Z,Dharminder Kumar Dhanda,Edm.String,Bubbles,Edm.String,SuperBubbles1443113639239,Edm.String,Dharminder Kumar Dhanda,Edm.String
+TableHeatMap1443716069308,173,2018-07-01T10:34:14.878Z,Microsoft,Edm.String,Table Heatmap,Edm.String,TableHeatMap1443716069308,Edm.String,Microsoft,Edm.String
+TableSorter1450434005853,174,2018-07-01T10:34:14.921Z,MSR,Edm.String,Table Sorter,Edm.String,TableSorter1450434005853,Edm.String,MSR,Edm.String
+Tachometer1474636471549,175,2018-07-01T10:34:14.920Z,Annik,Edm.String,Tachometer,Edm.String,Tachometer1474636471549,Edm.String,Annik,Edm.String
+TimeBrush1450434005853,179,2018-07-01T10:34:14.887Z,MSR,Edm.String,Time Brush Slicer,Edm.String,TimeBrush1450434005853,Edm.String,MSR,Edm.String
+Timeline1447991079100,183,2018-07-01T10:34:14.924Z,Microsoft,Edm.String,Timeline Slicer,Edm.String,Timeline1447991079100,Edm.String,Microsoft,Edm.String
+TimelineStoryteller1652434605730,184,2018-07-01T10:34:14.892Z,MSR,Edm.String,Timeline Storyteller,Edm.String,TimelineStoryteller1652434605730,Edm.String,MSR,Edm.String
+ToolTipVisual004F143E728A84041A402082E3D80A951,186,2018-07-01T10:34:14.904Z,Microsoft,Edm.String,Tooltip,Edm.String,ToolTipVisual004F143E728A84041A402082E3D80A951,Edm.String,Microsoft,Edm.String
+TornadoChart1452517688218,187,2018-07-01T10:34:14.895Z,Microsoft,Edm.String,Tornado chart,Edm.String,TornadoChart1452517688218,Edm.String,Microsoft,Edm.String
+VisioDF_PBI_CV_D7C10B1A_506B_4123_878E_39E8698FD30A,197,2018-07-01T10:34:14.895Z,Visio,Edm.String,Visio visual (Preview) (DF version),Edm.String,VisioDF_PBI_CV_D7C10B1A_506B_4123_878E_39E8698FD30A,Edm.String,Visio,Edm.String
+Visio_PBI_CV_D7C10B1A_506B_4123_878E_39E8698FD30A,196,2018-07-01T10:34:14.931Z,Visio,Edm.String,Visio visual (Preview),Edm.String,Visio_PBI_CV_D7C10B1A_506B_4123_878E_39E8698FD30A,Edm.String,Visio,Edm.String
+WaffleChart1453776852267,199,2018-07-01T10:34:14.933Z,kiewic.com,Edm.String,Waffle Chart,Edm.String,WaffleChart1453776852267,Edm.String,kiewic.com,Edm.String
+WordCloud1447959067750,200,2018-07-01T10:34:14.937Z,Microsoft,Edm.String,Word Cloud,Edm.String,WordCloud1447959067750,Edm.String,Microsoft,Edm.String
+ZoomChartsFacetChartFree33C9F325D337408C98D4E1D4E1EAD704,59,2018-07-01T10:34:14.895Z,ZoomCharts,Edm.String,Drill-down column chart,Edm.String,ZoomChartsFacetChartFree33C9F325D337408C98D4E1D4E1EAD704,Edm.String,ZoomCharts,Edm.String
+ZoomChartsNetChartFreeD1C58E3B59077E6D06A4CB9B0D4E2029A917,130,2018-07-01T10:34:14.949Z,ZoomCharts,Edm.String,Network Visualization and Filter,Edm.String,ZoomChartsNetChartFreeD1C58E3B59077E6D06A4CB9B0D4E2029A917,Edm.String,ZoomCharts,Edm.String
+ZoomChartsPieChartFree33C9F325D337408C98D4E1D4E1EAD703,61,2018-07-01T10:34:14.940Z,ZoomCharts,Edm.String,Drill-down donut chart,Edm.String,ZoomChartsPieChartFree33C9F325D337408C98D4E1D4E1EAD703,Edm.String,ZoomCharts,Edm.String
+ZoomChartsTimeChartFree33C9F325D337408C98D4E1D4E1EAD705,60,2018-07-01T10:34:14.950Z,ZoomCharts,Edm.String,Drill-down column chart for time based data,Edm.String,ZoomChartsTimeChartFree33C9F325D337408C98D4E1D4E1EAD705,Edm.String,ZoomCharts,Edm.String
+aaaTest036D853BE8724A99931BCD672FDAC2DA,19,2018-07-01T10:34:14.945Z,Pieter Olivier,Edm.String,Bubble Grid,Edm.String,aaaTest036D853BE8724A99931BCD672FDAC2DA,Edm.String,Pieter Olivier,Edm.String
+advanceCardE03760C5AB684758B56AA29F9E6C257B,1,2018-07-01T10:34:14.905Z,Bhavesh Jadav,Edm.String,Advance Card,Edm.String,advanceCardE03760C5AB684758B56AA29F9E6C257B,Edm.String,Bhavesh Jadav,Edm.String
+advanceTooltipADE8B01854F34CEF9616DF8EA6069129,2,2018-07-01T10:34:14.918Z,Bhavesh Jadav,Edm.String,Advance Tooltip,Edm.String,advanceTooltipADE8B01854F34CEF9616DF8EA6069129,Edm.String,Bhavesh Jadav,Edm.String
+arriaEditorF31C2A28E0C74B7DB59602C203F4B024,6,2018-07-01T10:34:14.906Z,Arria NLG,Edm.String,Articulate Intelligence,Edm.String,arriaEditorF31C2A28E0C74B7DB59602C203F4B024,Edm.String,Arria NLG,Edm.String
+asTAccounts09A4D2EB59844E62A389EFF2090C3442,7,2018-07-01T10:34:14.919Z,Koukussa Kehittamiseen,Edm.String,as T-Accounts,Edm.String,asTAccounts09A4D2EB59844E62A389EFF2090C3442,Edm.String,Koukussa Kehittamiseen,Edm.String
+asTimeline3ECFC8FDEB264A3ABB1C0E31EC19FE14,8,2018-07-01T10:34:14.947Z,Koukussa Kehittamiseen,Edm.String,as Timeline,Edm.String,asTimeline3ECFC8FDEB264A3ABB1C0E31EC19FE14,Edm.String,Koukussa Kehittamiseen,Edm.String
+autoplayDA5FE8841B1E49D387F8B6A575144547,62,2018-07-01T10:34:14.949Z,Microsoft,Edm.String,Drilldown player,Edm.String,autoplayDA5FE8841B1E49D387F8B6A575144547,Edm.String,Microsoft,Edm.String
+bciCalendarCC0FA2BFE4B54EE1ACCFE383B9B1DE61,12,2018-07-01T10:34:14.953Z,Manny Merino,Edm.String,Beyondsoft Calendar,Edm.String,bciCalendarCC0FA2BFE4B54EE1ACCFE383B9B1DE61,Edm.String,Manny Merino,Edm.String
+bubbleChartEEDCDFA388784AEEAB47972BC1626196,18,2018-07-01T10:34:14.917Z,Akvelon,Edm.String,Bubble Chart by Akvelon,Edm.String,bubbleChartEEDCDFA388784AEEAB47972BC1626196,Edm.String,Akvelon,Edm.String
+calendarVisual5E37BB8CB2CB427ABE4F9EAAE66C5223,45,2018-07-01T10:34:14.930Z,Akvelon,Edm.String,Custom Calendar by Akvelon,Edm.String,calendarVisual5E37BB8CB2CB427ABE4F9EAAE66C5223,Edm.String,Akvelon,Edm.String
+chartAccentBarChart582BFCBCF5E545239A7755E2C967C656,28,2018-07-01T10:34:14.933Z,ChartAccent,Edm.String,ChartAccent - BarChart,Edm.String,chartAccentBarChart582BFCBCF5E545239A7755E2C967C656,Edm.String,ChartAccent,Edm.String
+chartAccentLineChart53011494391B42469A4BC46D195C59F3,29,2018-07-01T10:34:14.965Z,ChartAccent,Edm.String,ChartAccent - LineChart,Edm.String,chartAccentLineChart53011494391B42469A4BC46D195C59F3,Edm.String,ChartAccent,Edm.String
+chartAccentScatterplotFB2F1766D02949498AA7D4FFF7FB4433,30,2018-07-01T10:34:14.935Z,ChartAccent,Edm.String,ChartAccent - Scatterplot,Edm.String,chartAccentScatterplotFB2F1766D02949498AA7D4FFF7FB4433,Edm.String,ChartAccent,Edm.String
+choropleth4C77906D867C4C09AFE83BA5E2AA106A,58,2018-07-01T10:34:14.939Z,Microsoft,Edm.String,Drilldown Choropleth,Edm.String,choropleth4C77906D867C4C09AFE83BA5E2AA106A,Edm.String,Microsoft,Edm.String
+colorMapFE43D2D02D3D4329995B15E94EDC9279,40,2018-07-01T10:34:14.943Z,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String,colorMap,Edm.String,colorMapFE43D2D02D3D4329995B15E94EDC9279,Edm.String,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String
+columbusEEGanttChart99CCB2C0536D4CEAA68F3DAB56FBC693,89,2018-07-01T10:34:15.008Z,Columbus Global,Edm.String,Gantt Chart for PowerBI by Columbus Estonia,Edm.String,columbusEEGanttChart99CCB2C0536D4CEAA68F3DAB56FBC693,Edm.String,Columbus Global,Edm.String
+countdownFA24FE5944D34ADD929D0DAE6EE57D70,43,2018-07-01T10:34:14.964Z,Diego Gutierrez Yepiz,Edm.String,Count Down Timer,Edm.String,countdownFA24FE5944D34ADD929D0DAE6EE57D70,Edm.String,Diego Gutierrez Yepiz,Edm.String
+cylindricalGauge73A12A442345453EB69B593649C3A341,46,2018-07-01T10:34:14.970Z,MAQ LLC,Edm.String,Cylindrical Gauge by MAQ Software,Edm.String,cylindricalGauge73A12A442345453EB69B593649C3A341,Edm.String,MAQ LLC,Edm.String
+dataInsightsEC19A7A1FF1C44B784A13A27E1A145AB,49,2018-07-01T10:34:14.972Z,MAQ LLC,Edm.String,Data Insights by MAQ Software,Edm.String,dataInsightsEC19A7A1FF1C44B784A13A27E1A145AB,Edm.String,MAQ LLC,Edm.String
+databarKPIB8060E2B144244C5A38807466893C9F5,48,2018-07-01T10:34:14.980Z,AllAboutData,Edm.String,Data bar KPI,Edm.String,databarKPIB8060E2B144244C5A38807466893C9F5,Edm.String,AllAboutData,Edm.String
+dg5AAA90EFEFE747CB9357C4FC19B85A58,52,2018-07-01T10:34:14.951Z,CloudFronts Technologies LLP,Edm.String,Dial Gauge,Edm.String,dg5AAA90EFEFE747CB9357C4FC19B85A58,Edm.String,CloudFronts Technologies LLP,Edm.String
+dotPlotByOKViz24930F8B0456488F85D4AF007BF0F855,56,2018-07-01T10:34:14.958Z,OKViz,Edm.String,Dot Plot by OKViz,Edm.String,dotPlotByOKViz24930F8B0456488F85D4AF007BF0F855,Edm.String,OKViz,Edm.String
+drilldownCartogramD5E1077C70074FFCB26AFC2A636614BF,57,2018-07-01T10:34:14.976Z,Microsoft,Edm.String,Drilldown Cartogram,Edm.String,drilldownCartogramD5E1077C70074FFCB26AFC2A636614BF,Edm.String,Microsoft,Edm.String
+dynamicTooltip1859AB39DB23051788ADF752BCB90749,65,2018-07-01T10:34:14.956Z,MAQ LLC,Edm.String,Dynamic Tooltip by MAQ Software,Edm.String,dynamicTooltip1859AB39DB23051788ADF752BCB90749,Edm.String,MAQ LLC,Edm.String
+enlightenBubbleStack13709305C6AD4E59B8F78FFEA36FB62E,68,2018-07-01T10:34:14.980Z,Enlighten Designs,Edm.String,Enlighten Bubble Stack,Edm.String,enlightenBubbleStack13709305C6AD4E59B8F78FFEA36FB62E,Edm.String,Enlighten Designs,Edm.String
+enlightenDataStoryDDFB78A6143E42CFAFBC50CCF18D978D,69,2018-07-01T10:34:14.996Z,Enlighten Designs,Edm.String,Enlighten Data Story,Edm.String,enlightenDataStoryDDFB78A6143E42CFAFBC50CCF18D978D,Edm.String,Enlighten Designs,Edm.String
+enlightenSlicerB18DC0CE4A1F4BA79CE49FBE40F3965F,70,2018-07-01T10:34:14.955Z,Enlighten Designs,Edm.String,Enlighten Slicer,Edm.String,enlightenSlicerB18DC0CE4A1F4BA79CE49FBE40F3965F,Edm.String,Enlighten Designs,Edm.String
+enlightenStackShuffle33EDB050C2424C618953642FFC0B291A,71,2018-07-01T10:34:14.957Z,Enlighten Designs,Edm.String,Enlighten Stack Shuffle,Edm.String,enlightenStackShuffle33EDB050C2424C618953642FFC0B291A,Edm.String,Enlighten Designs,Edm.String
+enlightenWaffleChartC94C0BDE416B413A8071A92B5E75A718,72,2018-07-01T10:34:14.990Z,Enlighten Designs,Edm.String,Enlighten Waffle Chart,Edm.String,enlightenWaffleChartC94C0BDE416B413A8071A92B5E75A718,Edm.String,Enlighten Designs,Edm.String
+enlightenWorldFlagsE887F52F76244B1C927F80CF9724AEF6,73,2018-07-01T10:34:14.999Z,Enlighten Designs,Edm.String,Enlighten World Flags,Edm.String,enlightenWorldFlagsE887F52F76244B1C927F80CF9724AEF6,Edm.String,Enlighten Designs,Edm.String
+flowFE43D2D02D3D4329995B15E94EDC9279,79,2018-07-01T10:34:14.961Z,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String,flowMap by Sharewinfo,Edm.String,flowFE43D2D02D3D4329995B15E94EDC9279,Edm.String,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String
+flowmap30CFDD5B92F848C88242B1E81C8C33C7,78,2018-07-01T10:34:14.998Z,Weiwei Cui,Edm.String,Flow map,Edm.String,flowmap30CFDD5B92F848C88242B1E81C8C33C7,Edm.String,Weiwei Cui,Edm.String
+funnelwithsource1823AB39DB234AB522063E728AD51,86,2018-07-01T10:34:15.000Z,MAQ LLC,Edm.String,Funnel with Source by MAQ Software,Edm.String,funnelwithsource1823AB39DB234AB522063E728AD51,Edm.String,MAQ LLC,Edm.String
+greetUser6CB07B751B8D459488570BBA348772CD,93,2018-07-01T10:34:14.972Z,Sadaf K Ahmedi,Edm.String,greetUser,Edm.String,greetUser6CB07B751B8D459488570BBA348772CD,Edm.String,Sadaf K Ahmedi,Edm.String
+heatFE43D2D02D3D4329995B15E94EDC9279,97,2018-07-01T10:34:14.998Z,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String,HeatMapChina,Edm.String,heatFE43D2D02D3D4329995B15E94EDC9279,Edm.String,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String
+heatStreams74779FE5319F4655BE62C4C5FD0ABFB1,95,2018-07-01T10:34:14.968Z,MSR,Edm.String,Heat Streams,Edm.String,heatStreams74779FE5319F4655BE62C4C5FD0ABFB1,Edm.String,MSR,Edm.String
+heatmapF244EA9EE1F34E828A80CF19B41976F8,96,2018-07-01T10:34:15.005Z,Weiwei Cui,Edm.String,Heatmap,Edm.String,heatmapF244EA9EE1F34E828A80CF19B41976F8,Edm.String,Weiwei Cui,Edm.String
+hexbinScatter70A7F14565444FAA99F786FAD6EA5AE1,98,2018-07-01T10:34:15.005Z,BlueGranite,Edm.String,Hexbin Scatterplot,Edm.String,hexbinScatter70A7F14565444FAA99F786FAD6EA5AE1,Edm.String,BlueGranite,Edm.String
+hierarchyChartByAkvelon6F792A8745784877BCD8F4ACA5AD4207,99,2018-07-01T10:34:14.973Z,Akvelon,Edm.String,Hierarchy Chart by Akvelon,Edm.String,hierarchyChartByAkvelon6F792A8745784877BCD8F4ACA5AD4207,Edm.String,Akvelon,Edm.String
+histogramXY6E3D5691159E41859A007A262D4B0E9E,102,2018-07-01T10:34:15.014Z,MAQ LLC,Edm.String,Histogram with points by MAQ Software,Edm.String,histogramXY6E3D5691159E41859A007A262D4B0E9E,Edm.String,MAQ LLC,Edm.String
+htmlViewerB24A1AEC2B4F4998B8E9A380662CAA2A,105,2018-07-01T10:34:14.978Z,Hitachi Solutions,Edm.String,HTML viewer,Edm.String,htmlViewerB24A1AEC2B4F4998B8E9A380662CAA2A,Edm.String,Hitachi Solutions,Edm.String
+impactBubbleChart9F474F4C9D2243D7A6BB693D25F75740,112,2018-07-01T10:34:14.990Z,"InterKnowlogy, LLC",Edm.String,Impact Bubble Chart,Edm.String,impactBubbleChart9F474F4C9D2243D7A6BB693D25F75740,Edm.String,"InterKnowlogy, LLC",Edm.String
+journeyGraph1859AB39DB23421488ADF752BCB05167,114,2018-07-01T10:34:15.020Z,MAQ LLC,Edm.String,Journey Chart by MAQ Software,Edm.String,journeyGraph1859AB39DB23421488ADF752BCB05167,Edm.String,MAQ LLC,Edm.String
+kPI0A9FD39FD55944609DA4A968BE175489,115,2018-07-01T10:34:15.017Z,Akvelon,Edm.String,KPI Chart by Akvelon,Edm.String,kPI0A9FD39FD55944609DA4A968BE175489,Edm.String,Akvelon,Edm.String
+kPITableAF0DFBAE561448EA9A960BF4A2B0D1C9,119,2018-07-01T10:34:14.984Z,DevScope,Edm.String,KPI Table,Edm.String,kPITableAF0DFBAE561448EA9A960BF4A2B0D1C9,Edm.String,DevScope,Edm.String
+kpiTicker492C9305B9464241B52382527F977DE1,120,2018-07-01T10:34:14.993Z,MAQ LLC,Edm.String,KPI Ticker by MAQ Software,Edm.String,kpiTicker492C9305B9464241B52382527F977DE1,Edm.String,MAQ LLC,Edm.String
+narrativeAF44D3780B9743AB80246B39523323A3,128,2018-07-01T10:34:15.019Z,Narrative Science,Edm.String,Narratives for Power BI,Edm.String,narrativeAF44D3780B9743AB80246B39523323A3,Edm.String,Narrative Science,Edm.String
+outliersDetection7FCA,131,2018-07-01T10:34:14.984Z,Microsoft,Edm.String,Outliers Detection,Edm.String,outliersDetection7FCA,Edm.String,Microsoft,Edm.String
+paretoChartAD3E98E9DE714DE182B47FAFCEC3C7F7,133,2018-07-01T10:34:15.017Z,Alexander Ivanov,Edm.String,Pareto Chart,Edm.String,paretoChartAD3E98E9DE714DE182B47FAFCEC3C7F7,Edm.String,Alexander Ivanov,Edm.String
+pbiBubbles3E5A1BA1E8AC477CAA862EEB96B87842,31,2018-07-01T10:34:15.018Z,Jack Butts,Edm.String,Chat Bubbles,Edm.String,pbiBubbles3E5A1BA1E8AC477CAA862EEB96B87842,Edm.String,Jack Butts,Edm.String
+pbiCollageE166DE34940E43CA8FC3A9C1A52231D4,39,2018-07-01T10:34:14.994Z,CloudScope,Edm.String,Collage by CloudScope,Edm.String,pbiCollageE166DE34940E43CA8FC3A9C1A52231D4,Edm.String,CloudScope,Edm.String
+pbiOverView3784D1298B1B44E6936AFC1576E7AC81,132,2018-07-01T10:34:15.018Z,CloudScope,Edm.String,Overview by CloudScope,Edm.String,pbiOverView3784D1298B1B44E6936AFC1576E7AC81,Edm.String,CloudScope,Edm.String
+pbiVideoA76375500B3F48A487BF6D60E5DE7626,195,2018-07-01T10:34:14.995Z,CloudScope,Edm.String,Video,Edm.String,pbiVideoA76375500B3F48A487BF6D60E5DE7626,Edm.String,CloudScope,Edm.String
+powerKPI462CE5C2666F4EC8A8BDD7E5587320A3,137,2018-07-01T10:34:15.022Z,Microsoft,Edm.String,Power KPI ,Edm.String,powerKPI462CE5C2666F4EC8A8BDD7E5587320A3,Edm.String,Microsoft,Edm.String
+powerKPIMatrixEB2381CC88A8425FBEB1B07FF57784E6,138,2018-07-01T10:34:15.020Z,Microsoft,Edm.String,Power KPI Matrix,Edm.String,powerKPIMatrixEB2381CC88A8425FBEB1B07FF57784E6,Edm.String,Microsoft,Edm.String
+quadrantChart1257AB39DB23121488AEB752BCB06127,142,2018-07-01T10:34:15.009Z,MAQ LLC,Edm.String,Quadrant Chart by MAQ Software,Edm.String,quadrantChart1257AB39DB23121488AEB752BCB06127,Edm.String,MAQ LLC,Edm.String
+qualityControlCharts263D60DC45BF4A968185B24403931A8B,143,2018-07-01T10:34:15.024Z,Visual Bi Solutions,Edm.String,Quality Control Charts - Shewhart,Edm.String,qualityControlCharts263D60DC45BF4A968185B24403931A8B,Edm.String,Visual Bi Solutions,Edm.String
+rDataTableF01A81A1541448719C37BCD0F9EABDD7,147,2018-07-01T10:34:15.004Z,BlueGranite,Edm.String,rDataTable,Edm.String,rDataTableF01A81A1541448719C37BCD0F9EABDD7,Edm.String,BlueGranite,Edm.String
+rPivotTable8B3D024D64314B469FFC4852A7ACBD5F,144,2018-07-01T10:34:15.004Z,BlueGranite,Edm.String,R Pivot Table,Edm.String,rPivotTable8B3D024D64314B469FFC4852A7ACBD5F,Edm.String,BlueGranite,Edm.String
+radarTargetChart4972805D5C4C4BD495CD9192AC21FD40,146,2018-07-01T10:34:15.004Z,Microsoft,Edm.String,Radar Target Chart,Edm.String,radarTargetChart4972805D5C4C4BD495CD9192AC21FD40,Edm.String,Microsoft,Edm.String
+rotatingChart1823AN39DB23210918ADF752ECB2A251,149,2018-07-01T10:34:15.028Z,MAQ LLC,Edm.String,Rotating Chart by MAQ Software,Edm.String,rotatingChart1823AN39DB23210918ADF752ECB2A251,Edm.String,MAQ LLC,Edm.String
+rotatingTile1859AB39DB23400988ADF752BCB9C967,150,2018-07-01T10:34:19.716Z,MAQ LLC,Edm.String,Rotating Tile by MAQ Software,Edm.String,rotatingTile1859AB39DB23400988ADF752BCB9C967,Edm.String,MAQ LLC,Edm.String
+routemap863828C4992A473C9A5FB6A6B0EDF5DC,151,2018-07-01T10:34:15.021Z,Weiwei Cui,Edm.String,Route map,Edm.String,routemap863828C4992A473C9A5FB6A6B0EDF5DC,Edm.String,Weiwei Cui,Edm.String
+scatterFE43D2D02D3D4329995B15E94EDC9279,156,2018-07-01T10:34:15.026Z,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String,scatterMap,Edm.String,scatterFE43D2D02D3D4329995B15E94EDC9279,Edm.String,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String
+simpleKPI8834183003554B1586236E8CAC1ADBE2,159,2018-07-01T10:34:15.021Z,AllAboutData,Edm.String,Simple Responsive KPI visual,Edm.String,simpleKPI8834183003554B1586236E8CAC1ADBE2,Edm.String,AllAboutData,Edm.String
+socialNetworkGraph99E9F31DDFD7429BACA50118466E4D11,162,2018-07-01T10:34:15.025Z,Arthur Graus,Edm.String,Social Network Graph,Edm.String,socialNetworkGraph99E9F31DDFD7429BACA50118466E4D11,Edm.String,Arthur Graus,Edm.String
+swDataTextBox142233AC1451461DB2DC3DAACF6A119C,170,2018-07-01T10:34:15.027Z,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String,swDataTextBox,Edm.String,swDataTextBox142233AC1451461DB2DC3DAACF6A119C,Edm.String,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String
+swOrgChart2A3BCE7191B5491FBB82F771A169702D,171,2018-07-01T10:34:15.029Z,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String,swOrgChart,Edm.String,swOrgChart2A3BCE7191B5491FBB82F771A169702D,Edm.String,"Beijing Shangbei Zhixin Technology Co., Ltd.",Edm.String
+textFilter25A4896A83E0487089E2B90C9AE57C8A,176,2018-07-01T10:34:15.036Z,MSR,Edm.String,Text Filter,Edm.String,textFilter25A4896A83E0487089E2B90C9AE57C8A,Edm.String,MSR,Edm.String
+threejsE0E480FFE18F46FE90AD2FA3A0D80C5F,91,2018-07-01T10:34:15.026Z,Jack Butts,Edm.String,Globe Data Bars,Edm.String,threejsE0E480FFE18F46FE90AD2FA3A0D80C5F,Edm.String,Jack Butts,Edm.String
+timeline1E0B9DD0A83A4E79BB5F9DE15C7690AE,110,2018-07-01T10:34:15.035Z,BlueGranite,Edm.String,Image Timeline,Edm.String,timeline1E0B9DD0A83A4E79BB5F9DE15C7690AE,Edm.String,BlueGranite,Edm.String
+titleboxF0BB233DD2994773B611FAC769C85681,185,2018-07-01T10:34:15.046Z,Ilitia,Edm.String,Titlebox,Edm.String,titleboxF0BB233DD2994773B611FAC769C85681,Edm.String,Ilitia,Edm.String
+treeImageFreeE1148639291D450198F892FA45A672BC,190,2018-07-01T10:34:15.036Z,Klaus Birringer,Edm.String,Ultimate decomposition Tree,Edm.String,treeImageFreeE1148639291D450198F892FA45A672BC,Edm.String,Klaus Birringer,Edm.String
+treeviz2DC46116C4554E20B59DD525EA4DC972,189,2018-07-01T10:34:15.051Z,autocont,Edm.String,TreeViz,Edm.String,treeviz2DC46116C4554E20B59DD525EA4DC972,Edm.String,autocont,Edm.String
+tweetlistEC3257599B0A40D19C16301EC2109CDE,182,2018-07-01T10:34:15.053Z,CloudScope,Edm.String,Timeline by CloudScope,Edm.String,tweetlistEC3257599B0A40D19C16301EC2109CDE,Edm.String,CloudScope,Edm.String
+twitterUserListC3F9093B9BF24EE48942A2D69AF68355,193,2018-07-01T10:34:15.050Z,CloudScope,Edm.String,User List by CloudScope,Edm.String,twitterUserListC3F9093B9BF24EE48942A2D69AF68355,Edm.String,CloudScope,Edm.String
+ultimateVariance9712E1351D4E4FA89077ED4D9351DC71,191,2018-07-01T10:34:15.043Z,Klaus Birringer,Edm.String,Ultimate Variance,Edm.String,ultimateVariance9712E1351D4E4FA89077ED4D9351DC71,Edm.String,Klaus Birringer,Edm.String
+ultimateWaterfall9712E1351D4E4FA89077ED4D9351DC71,192,2018-07-01T10:34:15.153Z,Klaus Birringer,Edm.String,Ultimate Waterfall,Edm.String,ultimateWaterfall9712E1351D4E4FA89077ED4D9351DC71,Edm.String,Klaus Birringer,Edm.String
+vennDiagram8527AJ74DB74562488PCR752UTY94651,194,2018-07-01T10:34:15.145Z,MAQ Software,Edm.String,Venn Diagram by MAQ Software,Edm.String,vennDiagram8527AJ74DB74562488PCR752UTY94651,Edm.String,MAQ Software,Edm.String
+vitarachartsMicrochart0A1B0D2B8A234CE5923234CD03573361,198,2018-07-01T10:34:15.144Z,Vitara LLC,Edm.String,VitaraCharts - MicroChart,Edm.String,vitarachartsMicrochart0A1B0D2B8A234CE5923234CD03573361,Edm.String,Vitara LLC,Edm.String

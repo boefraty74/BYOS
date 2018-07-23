@@ -1,0 +1,1595 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "connections_kusto_name": {
+      "defaultValue": "kusto",
+      "type": "String"
+    },
+    "connections_azureblob_name": {
+      "defaultValue": "azureblob",
+      "type": "String"
+    },
+    "vaults_be1byos1kv_name": {
+      "defaultValue": "be1byos1kv",
+      "type": "String"
+    },
+    "connections_azuretables_name": {
+      "defaultValue": "azuretables",
+      "type": "String"
+    },
+    "serverfarms_SomePlan_name": {
+      "defaultValue": "TheAppServicePlan",
+      "type": "String"
+    },
+    "sites_be1byos1serviceApps_name": {
+      "defaultValue": "be1byos1serviceApps",
+      "type": "String"
+    },
+    "sites_be1byos1serviceAppKeyVault_name": {
+      "defaultValue": "be1byos1serviceAppKeyVault",
+      "type": "String"
+    },
+    "storageAccounts_be1byos1sa_name": {
+      "defaultValue": "be1byos1sa",
+      "type": "String"
+    },
+    "workflows_be_byos_get_users_la_name": {
+      "defaultValue": "be_byos_get_users_la",
+      "type": "String"
+    },
+    "workflows_be_insideInstaller_la_name": {
+      "defaultValue": "be_insideInstaller_la",
+      "type": "String"
+    },
+    "workflows_be_byos_refresh_data_la_name": {
+      "defaultValue": "be_byos_refresh_data_la",
+      "type": "String"
+    },
+    "config_web_name": {
+      "defaultValue": "web",
+      "type": "String"
+    } /* ,
+   "hostNameBindings_be1byos1serviceappkeyvault.azurewebsites.net_name": {
+      "defaultValue": "be1byos1serviceappkeyvault.azurewebsites.net",
+      "type": "String"
+    },
+    "hostNameBindings_be1byos1serviceapps.azurewebsites.net_name": {
+      "defaultValue": "be1byos1serviceapps1.azurewebsites.net",
+      "type": "String"
+    }*/
+  },
+  "variables": {
+    "repoUrl": "https://github.com/boefraty74/BYOS.git",
+    "branch": "master",
+    "storageAccountid": "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name'))]"
+  },
+  "resources": [
+    {
+      "comments": "Generalized from resource: '/subscriptions/78e47976-009f-4d4a-a961-6046cdabf459/resourceGroups/be_byos_rg/providers/Microsoft.KeyVault/vaults/be1byos1kv'.",
+      "type": "Microsoft.KeyVault/vaults",
+      "name": "[parameters('vaults_be1byos1kv_name')]",
+      "apiVersion": "2016-10-01",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "UsedByLogicApp": "inside_installer",
+        "DATAPOOL_INSTALLER": "1"
+      },
+      "scale": null,
+      "properties": {
+        "sku": {
+          "family": "A",
+          "name": "Standard"
+        },
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "accessPolicies": [
+          {
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+            "objectId": "71ead673-cb5c-4e6d-a00f-337070e39e7a",
+            "permissions": {
+              "keys": [
+                "Get",
+                "List",
+                "Update",
+                "Create",
+                "Import",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore"
+              ],
+              "secrets": [
+                "Get",
+                "List",
+                "Set",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore"
+              ],
+              "certificates": [
+                "Get",
+                "List",
+                "Update",
+                "Create",
+                "Import",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore",
+                "ManageContacts",
+                "ManageIssuers",
+                "GetIssuers",
+                "ListIssuers",
+                "SetIssuers",
+                "DeleteIssuers"
+              ]
+            }
+          },
+          {
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+            "objectId": "8c489c13-bc34-4ab1-a10f-8298d2da7f27",
+            "permissions": {
+              "keys": [
+                "Get",
+                "List"
+              ],
+              "secrets": [
+                "Get",
+                "List"
+              ],
+              "certificates": []
+            }
+          },
+          {
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+            "objectId": "fcb37d33-dfa9-49e1-8734-f9f820232a6e",
+            "permissions": {
+              "keys": [
+                "Get",
+                "List",
+                "Update",
+                "Create",
+                "Import",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore",
+                "Decrypt",
+                "Encrypt",
+                "UnwrapKey",
+                "WrapKey",
+                "Verify",
+                "Sign",
+                "Purge"
+              ],
+              "secrets": [
+                "Get",
+                "List",
+                "Set",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore",
+                "Purge"
+              ],
+              "certificates": []
+            }
+          }
+        ],
+        "enabledForDeployment": false,
+        "enabledForDiskEncryption": false,
+        "enabledForTemplateDeployment": false
+      },
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/78e47976-009f-4d4a-a961-6046cdabf459/resourceGroups/be_byos_rg/providers/Microsoft.Logic/workflows/be_byos_get_users_la'.",
+      "type": "Microsoft.Logic/workflows",
+      "name": "[parameters('workflows_be_byos_get_users_la_name')]",
+      "apiVersion": "2017-07-01",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "GET_USERS_LIST": "1"
+      },
+      "scale": null,
+      "properties": {
+        "state": "Enabled",
+        "definition": {
+          "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+          "contentVersion": "1.0.0.0",
+          "parameters": {
+            "$connections": {
+              "defaultValue": {},
+              "type": "Object"
+            }
+          },
+          "triggers": {
+            "manual": {
+              "type": "Request",
+              "kind": "Http",
+              "inputs": {
+                "schema": {}
+              }
+            }
+          },
+          "actions": {
+            "Compose": {
+              "runAfter": {
+                "For_each": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Compose",
+              "inputs": "@union(variables('outstring'),variables('outstring'))"
+            },
+            "For_each": {
+              "foreach": "@body('Parse_JSON')",
+              "actions": {
+                "Append_to_array_variable": {
+                  "runAfter": {},
+                  "type": "AppendToArrayVariable",
+                  "inputs": {
+                    "name": "outstring",
+                    "value": "@items('For_each')['Company']"
+                  }
+                }
+              },
+              "runAfter": {
+                "Initialize_variable": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Foreach"
+            },
+            "Get_entities": {
+              "runAfter": {},
+              "type": "ApiConnection",
+              "inputs": {
+                "headers": {
+                  "x-ms-client-request-id": "reqid1"
+                },
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azuretables']['connectionId']"
+                  }
+                },
+                "method": "get",
+                "path": "/Tables/@{encodeURIComponent('MapUsers2Resources')}/entities",
+                "queries": {
+                  "$select": "Company"
+                }
+              }
+            },
+            "Initialize_variable": {
+              "runAfter": {
+                "Parse_JSON": [
+                  "Succeeded"
+                ]
+              },
+              "type": "InitializeVariable",
+              "inputs": {
+                "variables": [
+                  {
+                    "name": "outstring",
+                    "type": "Array"
+                  }
+                ]
+              }
+            },
+            "Parse_JSON": {
+              "runAfter": {
+                "Get_entities": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ParseJson",
+              "inputs": {
+                "content": "@body('Get_entities')?['value']",
+                "schema": {
+                  "items": {
+                    "properties": {
+                      "Company": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Company"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "Response": {
+              "runAfter": {
+                "Compose": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Response",
+              "kind": "Http",
+              "inputs": {
+                "body": "@outputs('Compose')",
+                "statusCode": 200
+              }
+            }
+          },
+          "outputs": {}
+        },
+        "parameters": {
+          "$connections": {
+            "value": {
+              "azuretables": {
+                "connectionId": "[resourceId('Microsoft.Web/connections', parameters('connections_azuretables_name'))]",
+                "connectionName": "azuretables",
+                "id": "[concat('subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', parameters('connections_azuretables_name'))]"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/connections', parameters('connections_azuretables_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/78e47976-009f-4d4a-a961-6046cdabf459/resourceGroups/be_byos_rg/providers/Microsoft.Logic/workflows/be_byos_refresh_data_la'.",
+      "type": "Microsoft.Logic/workflows",
+      "name": "[parameters('workflows_be_byos_refresh_data_la_name')]",
+      "apiVersion": "2017-07-01",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "UsedByLogicApp": "refresh_data",
+        "DATAPOOL_REFRESH": "1"
+      },
+      "scale": null,
+      "properties": {
+        "state": "Enabled",
+        "definition": {
+          "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+          "contentVersion": "1.0.0.0",
+          "parameters": {
+            "$connections": {
+              "defaultValue": {},
+              "type": "Object"
+            }
+          },
+          "triggers": {
+            "Recurrence": {
+              "recurrence": {
+                "frequency": "Week",
+                "interval": 1
+              },
+              "type": "Recurrence"
+            }
+          },
+          "actions": {
+            "For_each": {
+              "foreach": "@body('List_blobs')?['value']",
+              "actions": {
+                "Compose": {
+                  "runAfter": {
+                    "Get_blob_content": [
+                      "Succeeded"
+                    ]
+                  },
+                  "type": "Compose",
+                  "inputs": "@json(body('Get_blob_content'))"
+                },
+                "Create_CSV_table": {
+                  "runAfter": {
+                    "Parse_JSON_2": [
+                      "Succeeded"
+                    ]
+                  },
+                  "type": "Table",
+                  "inputs": {
+                    "columns": [
+                      {
+                        "value": "@item()['timestamp']"
+                      },
+                      {
+                        "value": "@item()['app_Name']"
+                      },
+                      {
+                        "value": "@item()['VisualName']"
+                      },
+                      {
+                        "value": "@item()['ApiVersion']"
+                      },
+                      {
+                        "value": "@item()['VisualVersion']"
+                      },
+                      {
+                        "value": "@item()['BuildNumber']"
+                      },
+                      {
+                        "value": "@item()['location_Country']"
+                      },
+                      {
+                        "value": "@item()['location_StateOrProvince']"
+                      },
+                      {
+                        "value": "@item()['location_City']"
+                      },
+                      {
+                        "value": "@item()['sessionCount']"
+                      },
+                      {
+                        "value": "@item()['tenantCount']"
+                      },
+                      {
+                        "value": "@item()['userCount']"
+                      }
+                    ],
+                    "format": "CSV",
+                    "from": "@body('Parse_JSON_2')"
+                  }
+                },
+                "Get_blob_content": {
+                  "runAfter": {},
+                  "metadata": {
+                    "JTJmcmVmcmVzaGRhdGElMmZuZXdjb250YWluZXJuYW1lMTAuanNvbg==": "/refreshdata/newcontainername10.json"
+                  },
+                  "type": "ApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connection": {
+                        "name": "@parameters('$connections')['azureblob']['connectionId']"
+                      }
+                    },
+                    "method": "get",
+                    "path": "/datasets/default/files/@{encodeURIComponent(encodeURIComponent('/refreshdata/', items('For_each')?['DisplayName']))}/content",
+                    "queries": {
+                      "inferContentType": true
+                    }
+                  }
+                },
+                "Parse_JSON": {
+                  "runAfter": {
+                    "Compose": [
+                      "Succeeded"
+                    ]
+                  },
+                  "type": "ParseJson",
+                  "inputs": {
+                    "content": "@outputs('Compose')",
+                    "schema": {
+                      "properties": {
+                        "containerName": {
+                          "type": "string"
+                        },
+                        "kustoCluster": {
+                          "type": "string"
+                        },
+                        "kustoDatabase": {
+                          "type": "string"
+                        },
+                        "kustoQuery": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  }
+                },
+                "Parse_JSON_2": {
+                  "runAfter": {
+                    "Run_query_and_list_results": [
+                      "Succeeded"
+                    ]
+                  },
+                  "type": "ParseJson",
+                  "inputs": {
+                    "content": "@body('Run_query_and_list_results')?['value']",
+                    "schema": {
+                      "items": {
+                        "properties": {
+                          "ApiVersion": {
+                            "type": "string"
+                          },
+                          "BuildNumber": {
+                            "type": "string"
+                          },
+                          "VisualName": {
+                            "type": "string"
+                          },
+                          "VisualVersion": {
+                            "type": "string"
+                          },
+                          "app_Name": {
+                            "type": "string"
+                          },
+                          "location_City": {
+                            "type": "string"
+                          },
+                          "location_Country": {
+                            "type": "string"
+                          },
+                          "location_StateOrProvince": {
+                            "type": "string"
+                          },
+                          "sessionCount": {
+                            "type": "integer"
+                          },
+                          "tenantCount": {
+                            "type": "integer"
+                          },
+                          "timestamp": {
+                            "type": "string"
+                          },
+                          "userCount": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "timestamp",
+                          "app_Name",
+                          "VisualName",
+                          "VisualVersion",
+                          "ApiVersion",
+                          "BuildNumber",
+                          "location_City",
+                          "location_StateOrProvince",
+                          "location_Country",
+                          "userCount",
+                          "tenantCount",
+                          "sessionCount"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    }
+                  }
+                },
+                "Run_query_and_list_results": {
+                  "runAfter": {
+                    "Parse_JSON": [
+                      "Succeeded"
+                    ]
+                  },
+                  "type": "ApiConnection",
+                  "inputs": {
+                    "body": {
+                      "cluster": "@body('Parse_JSON')?['kustoCluster']",
+                      "csl": "@body('Parse_JSON')?['kustoQuery']",
+                      "db": "@body('Parse_JSON')?['kustoDatabase']"
+                    },
+                    "host": {
+                      "connection": {
+                        "name": "@parameters('$connections')['kusto']['connectionId']"
+                      }
+                    },
+                    "method": "post",
+                    "path": "/ListKustoResults/false"
+                  }
+                },
+                "Update_blob": {
+                  "runAfter": {
+                    "Create_CSV_table": [
+                      "Succeeded"
+                    ]
+                  },
+                  "type": "ApiConnection",
+                  "inputs": {
+                    "body": "@body('Create_CSV_table')",
+                    "host": {
+                      "connection": {
+                        "name": "@parameters('$connections')['azureblob']['connectionId']"
+                      }
+                    },
+                    "method": "put",
+                    "path": "/datasets/default/files/@{encodeURIComponent(encodeURIComponent('/', body('Parse_JSON')?['containerName'], '/datapool.csv'))}"
+                  }
+                }
+              },
+              "runAfter": {
+                "List_blobs": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Foreach"
+            },
+            "List_blobs": {
+              "runAfter": {},
+              "metadata": {
+                "JTJmcmVmcmVzaGRhdGE=": "/refreshdata"
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azureblob']['connectionId']"
+                  }
+                },
+                "method": "get",
+                "path": "/datasets/default/foldersV2/@{encodeURIComponent(encodeURIComponent('JTJmcmVmcmVzaGRhdGE='))}",
+                "queries": {
+                  "useFlatListing": false
+                }
+              }
+            }
+          },
+          "outputs": {}
+        },
+        "parameters": {
+          "$connections": {
+            "value": {
+              "azureblob": {
+                "connectionId": "[resourceId('Microsoft.Web/connections', parameters('connections_azureblob_name'))]",
+                "connectionName": "azureblob",
+                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', parameters('connections_azureblob_name'))]"
+              },
+              "kusto": {
+                "connectionId": "[resourceId('Microsoft.Web/connections', parameters('connections_kusto_name'))]",
+                "connectionName": "kusto",
+                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', parameters('connections_kusto_name'))]"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/connections', parameters('connections_azureblob_name'))]",
+        "[resourceId('Microsoft.Web/connections', parameters('connections_kusto_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/78e47976-009f-4d4a-a961-6046cdabf459/resourceGroups/be_byos_rg/providers/Microsoft.Logic/workflows/be_insideInstaller_la'.",
+      "type": "Microsoft.Logic/workflows",
+      "name": "[parameters('workflows_be_insideInstaller_la_name')]",
+      "apiVersion": "2017-07-01",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "DATAPOOL_INSTALLER": "1",
+        "UsedByLogicApp": "inside_installer"
+      },
+      "scale": null,
+      "properties": {
+        "state": "Enabled",
+        "definition": {
+          "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+          "contentVersion": "1.0.0.0",
+          "parameters": {
+            "$connections": {
+              "defaultValue": {},
+              "type": "Object"
+            }
+          },
+          "triggers": {
+            "manual": {
+              "type": "Request",
+              "kind": "Http",
+              "inputs": {
+                "schema": {
+                  "properties": {
+                    "Authorization": {
+                      "type": "string"
+                    },
+                    "containerName": {
+                      "type": "string"
+                    },
+                    "kustoQuery": {
+                      "type": "string"
+                    },
+                    "location": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "secretName": {
+                      "type": "string"
+                    },
+                    "upn": {
+                      "type": "string"
+                    },
+                    "userParam1": {
+                      "type": "number"
+                    },
+                    "userParam2": {
+                      "type": "string"
+                    },
+                    "userQuerySelectionID": {
+                      "type": "string"
+                    },
+                    "userTenantID": {
+                      "type": "string"
+                    },
+                    "workspaceID": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "description": "Triggers the logic app, request body contains parameters "
+            }
+          },
+          "actions": {
+            "Compose_input_JSON": {
+              "runAfter": {
+                "Get_blob_content_read_DPLX": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Compose",
+              "inputs": {
+                "oldContainer": "@body('Parse_JSON_to_map_input_params')?['templateContainer']",
+                "theData": "@json(body('Get_blob_content_read_DPLX'))",
+                "trueContainer": "@body('Parse_JSON_to_map_input_params')?['containerName']",
+                "trueName": "@body('Parse_JSON_to_get_datapool_ID')?['id']"
+              }
+            },
+            "Copy_replace_CSV_blob": {
+              "runAfter": {
+                "Create_CSV_table_to_be_copied_to_container": [
+                  "Succeeded"
+                ],
+                "HttpTriggerPowerShellCreateNewContainer": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "body": "@body('Create_CSV_table_to_be_copied_to_container')",
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azureblob']['connectionId']"
+                  }
+                },
+                "method": "post",
+                "path": "/datasets/default/files",
+                "queries": {
+                  "folderPath": "@body('Parse_JSON_to_map_input_params')?['containerName']",
+                  "name": "@body('Parse_JSON_to_map_input_params')?['csvFile']",
+                  "queryParametersSingleEncoded": true
+                }
+              },
+              "runtimeConfiguration": {
+                "contentTransfer": {
+                  "transferMode": "Chunked"
+                }
+              }
+            },
+            "Create_CSV_table_to_be_copied_to_container": {
+              "runAfter": {
+                "Parse_JSON_to_map_CSV_columns": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Table",
+              "inputs": {
+                "columns": [
+                  {
+                    "value": "@item()['timestamp']"
+                  },
+                  {
+                    "value": "@item()['app_Name']"
+                  },
+                  {
+                    "value": "@item()['VisualName']"
+                  },
+                  {
+                    "value": "@item()['ApiVersion']"
+                  },
+                  {
+                    "value": "@item()['VisualVersion']"
+                  },
+                  {
+                    "value": "@item()['BuildNumber']"
+                  },
+                  {
+                    "value": "@item()['location_Country']"
+                  },
+                  {
+                    "value": "@item()['location_StateOrProvince']"
+                  },
+                  {
+                    "value": "@item()['location_City']"
+                  },
+                  {
+                    "value": "@item()['sessionCount']"
+                  },
+                  {
+                    "value": "@item()['tenantCount']"
+                  },
+                  {
+                    "value": "@item()['userCount']"
+                  }
+                ],
+                "format": "CSV",
+                "from": "@body('Parse_JSON_to_map_CSV_columns')"
+              }
+            },
+            "Create_blob": {
+              "runAfter": {
+                "Copy_replace_CSV_blob": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "body": "{\n\"containerName\" : \"@{body('Parse_JSON_to_map_input_params')?['containerName']}\",\n\"kustoCluster\":  \"@{body('Parse_JSON_to_map_input_params')?['kustoCluster']}\",\n\"kustoDatabase\": \"@{body('Parse_JSON_to_map_input_params')?['kustoDatabase']}\",\n\"kustoQuery\": '@{body('HttpTriggerPythonCreateKustoQueryOptim')}'\n}",
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azureblob']['connectionId']"
+                  }
+                },
+                "method": "post",
+                "path": "/datasets/default/files",
+                "queries": {
+                  "folderPath": "/refreshdata",
+                  "name": "@{body('Parse_JSON_to_map_input_params')?['containerName']}.json",
+                  "queryParametersSingleEncoded": true
+                }
+              },
+              "runtimeConfiguration": {
+                "contentTransfer": {
+                  "transferMode": "Chunked"
+                }
+              }
+            },
+            "Get_blob_content_read_DPLX": {
+              "runAfter": {
+                "Parse_JSON_to_get_datapool_ID": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azureblob']['connectionId']"
+                  }
+                },
+                "method": "get",
+                "path": "/datasets/default/files/@{encodeURIComponent(encodeURIComponent('/', body('Parse_JSON_to_map_input_params')?['containerName'], '/model.dplx'))}/content",
+                "queries": {
+                  "inferContentType": true
+                }
+              }
+            },
+            "Get_entities_of_specific_user": {
+              "runAfter": {
+                "Parse_JSON_to_map_input_params": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "headers": {
+                  "x-ms-client-request-id": "req1"
+                },
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azuretables']['connectionId']"
+                  }
+                },
+                "method": "get",
+                "path": "/Tables/@{encodeURIComponent('MapUsers2Resources')}/entities",
+                "queries": {
+                  "$filter": "Company eq  '@{body('Parse_JSON_to_map_input_params')?['userQuerySelectionID']}'",
+                  "$select": "GUID, DisplayName"
+                }
+              },
+              "description": "Get entities from  Azure Table (with metadata about data)"
+            },
+            "HTTP_post_request_to_create_external_datapool": {
+              "runAfter": {
+                "HttpTriggerPowerShellCreateSecretKV": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Http",
+              "inputs": {
+                "body": {
+                  "description": "@body('Parse_JSON_to_map_input_params')?['description']",
+                  "name": "@body('Parse_JSON_to_map_input_params')?['datapoolName']",
+                  "postString": "@concat(body('Parse_JSON_to_map_input_params')?['PostStringHead'],body('Parse_JSON_to_map_input_params')?['workspaceID'], body('Parse_JSON_to_map_input_params')?['PostStringTail'])",
+                  "resourceGroupName": "@body('Parse_JSON_to_map_input_params')?['resourceGroupName']",
+                  "secretPath": "@body('Parse_JSON_to_map_input_params')?['secretPath']",
+                  "subscriptionId": "@body('Parse_JSON_to_map_input_params')?['ISVsubscriptionID']",
+                  "vaultName": "@body('Parse_JSON_to_map_input_params')?['vaultName']"
+                },
+                "headers": {
+                  "Accept": "@body('Parse_JSON_to_map_input_params')['Accept']",
+                  "Authorization": "@body('Parse_JSON_to_map_input_params')['Authorization']",
+                  "Connection": "@body('Parse_JSON_to_map_input_params')['Connection']",
+                  "Content-Length": "300",
+                  "Content-Type": "@body('Parse_JSON_to_map_input_params')['ContentType']",
+                  "Host": "@body('Parse_JSON_to_map_input_params')['Host']"
+                },
+                "method": "POST",
+                "uri": "@concat(body('Parse_JSON_to_map_input_params')?['PostStringHead'],body('Parse_JSON_to_map_input_params')?['workspaceID'], body('Parse_JSON_to_map_input_params')?['PostStringTail'])"
+              }
+            },
+            "HttpTriggerPowerShellCreateNewContainer": {
+              "runAfter": {
+                "HttpTriggerPythonCreateKustoQueryOptim": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Function",
+              "inputs": {
+                "body": {
+                  "StorageAccountKey": "@body('Parse_JSON_to_map_input_params')?['storagePrimeKey']",
+                  "containerName": "@body('Parse_JSON_to_map_input_params')?['containerName']",
+                  "copyModelName": "@body('Parse_JSON_to_map_input_params')?['modelFile']",
+                  "copySrcURI": "@concat(body('Parse_JSON_to_map_input_params')?['storageRootURL'],body('Parse_JSON_to_map_input_params')?['templateContainer'],'/')",
+                  "name": "Azure",
+                  "storageAccount": "@body('Parse_JSON_to_map_input_params')?['storageName']"
+                },
+                "function": {
+                  "id": "[concat(resourceId('Microsoft.Web/sites', parameters('sites_be1byos1serviceApps_name')), '/functions/HttpTriggerPowerShellCreateNewContainer')]"
+                }
+              }
+            },
+            "HttpTriggerPowerShellCreateParamsJsonOutput": {
+              "runAfter": {},
+              "type": "Function",
+              "inputs": {
+                "body": "@triggerBody()",
+                "function": {
+                  "id": "[concat(resourceId('Microsoft.Web/sites', parameters('sites_be1byos1serviceApps_name')), '/functions/HttpTriggerPowerShellCreateParamsJsonOutput')]"
+                }
+              },
+              "description": "Defines default parameters"
+            },
+            "HttpTriggerPowerShellCreateSecretKV": {
+              "runAfter": {
+                "Copy_replace_CSV_blob": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Function",
+              "inputs": {
+                "body": {
+                  "ISVtenantID": "@body('Parse_JSON_to_map_input_params')?['ISVtenantId']",
+                  "accountKey": "@body('Parse_JSON_to_map_input_params')?['storagePrimeKey']",
+                  "accountName": "@body('Parse_JSON_to_map_input_params')?['storageName']",
+                  "azureAccountID": "@body('Parse_JSON_to_map_input_params')?['ADappID']",
+                  "containerName": "@body('Parse_JSON_to_map_input_params')?['containerName']",
+                  "name": "NotImportant",
+                  "newSecretName": "@body('Parse_JSON_to_map_input_params')?['secretPath']",
+                  "servicePrinciplePassword": "@body('Parse_JSON_to_map_input_params')?['ADappPassword']",
+                  "upn": "@body('Parse_JSON_to_map_input_params')?['upn']",
+                  "userTenantID": "@body('Parse_JSON_to_map_input_params')?['tenantId']",
+                  "vaultName": "@body('Parse_JSON_to_map_input_params')?['vaultName']"
+                },
+                "function": {
+                  "id": "[concat(resourceId('Microsoft.Web/sites', parameters('sites_be1byos1serviceAppKeyVault_name')), '/functions/HttpTriggerPowerShellCreateSecretKV')]"
+                }
+              }
+            },
+            "HttpTriggerPythonCreateKustoQueryOptim": {
+              "runAfter": {
+                "Get_entities_of_specific_user": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Function",
+              "inputs": {
+                "body": {
+                  "entities": "@body('Get_entities_of_specific_user')?['value']",
+                  "userParam1": "@body('Parse_JSON_to_map_input_params')?['userParam1']",
+                  "userParam2": "@body('Parse_JSON_to_map_input_params')?['userParam2']"
+                },
+                "function": {
+                  "id": "[concat(resourceId('Microsoft.Web/sites', parameters('sites_be1byos1serviceApps_name')), '/functions/HttpTriggerPythonCreateKustoQueryOptim')]"
+                }
+              }
+            },
+            "HttpTriggerPythonModifyModelJson": {
+              "runAfter": {
+                "Compose_input_JSON": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Function",
+              "inputs": {
+                "body": "@outputs('Compose_input_JSON')",
+                "function": {
+                  "id": "[concat(resourceId('Microsoft.Web/sites', parameters('sites_be1byos1serviceApps_name')), '/functions/HttpTriggerPythonModifyModelJson')]"
+                }
+              }
+            },
+            "Parse_JSON_to_get_datapool_ID": {
+              "runAfter": {
+                "HTTP_post_request_to_create_external_datapool": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ParseJson",
+              "inputs": {
+                "content": "@body('HTTP_post_request_to_create_external_datapool')",
+                "schema": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "Parse_JSON_to_map_CSV_columns": {
+              "runAfter": {
+                "Run_query_and_list_results": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ParseJson",
+              "inputs": {
+                "content": "@body('Run_query_and_list_results')?['value']",
+                "schema": {
+                  "items": {
+                    "properties": {
+                      "ApiVersion": {
+                        "type": "string"
+                      },
+                      "BuildNumber": {
+                        "type": "string"
+                      },
+                      "VisualName": {
+                        "type": "string"
+                      },
+                      "VisualVersion": {
+                        "type": "string"
+                      },
+                      "app_Name": {
+                        "type": "string"
+                      },
+                      "location_City": {
+                        "type": "string"
+                      },
+                      "location_Country": {
+                        "type": "string"
+                      },
+                      "location_StateOrProvince": {
+                        "type": "string"
+                      },
+                      "sessionCount": {
+                        "type": "integer"
+                      },
+                      "tenantCount": {
+                        "type": "integer"
+                      },
+                      "timestamp": {
+                        "type": "string"
+                      },
+                      "userCount": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "timestamp",
+                      "app_Name",
+                      "VisualName",
+                      "VisualVersion",
+                      "ApiVersion",
+                      "BuildNumber",
+                      "location_City",
+                      "location_StateOrProvince",
+                      "location_Country",
+                      "userCount",
+                      "tenantCount",
+                      "sessionCount"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "Parse_JSON_to_map_input_params": {
+              "runAfter": {
+                "HttpTriggerPowerShellCreateParamsJsonOutput": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ParseJson",
+              "inputs": {
+                "content": "@body('HttpTriggerPowerShellCreateParamsJsonOutput')",
+                "schema": {
+                  "properties": {
+                    "ADappID": {
+                      "type": "string"
+                    },
+                    "ADappName": {
+                      "type": "string"
+                    },
+                    "ADappPassword": {
+                      "type": "string"
+                    },
+                    "Accept": {
+                      "type": "string"
+                    },
+                    "Authorization": {
+                      "type": "string"
+                    },
+                    "Connection": {
+                      "type": "string"
+                    },
+                    "ContentLength": {
+                      "type": "integer"
+                    },
+                    "ContentType": {
+                      "type": "string"
+                    },
+                    "Host": {
+                      "type": "string"
+                    },
+                    "ISVsubscriptionID": {
+                      "type": "string"
+                    },
+                    "ISVtenantId": {
+                      "type": "string"
+                    },
+                    "ISVworkspaceID": {
+                      "type": "string"
+                    },
+                    "PostStringHead": {
+                      "type": "string"
+                    },
+                    "PostStringTail": {
+                      "type": "string"
+                    },
+                    "PostStringTemp": {
+                      "type": "string"
+                    },
+                    "containerName": {
+                      "type": "string"
+                    },
+                    "csvFile": {
+                      "type": "string"
+                    },
+                    "datapoolName": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "kustoCluster": {
+                      "type": "string"
+                    },
+                    "kustoDatabase": {
+                      "type": "string"
+                    },
+                    "kustoQuery": {
+                      "type": "string"
+                    },
+                    "modelFile": {
+                      "type": "string"
+                    },
+                    "resourceGroupName": {
+                      "type": "string"
+                    },
+                    "secretPath": {
+                      "type": "string"
+                    },
+                    "someIndex": {
+                      "type": "integer"
+                    },
+                    "someRemark": {
+                      "type": "string"
+                    },
+                    "storageName": {
+                      "type": "string"
+                    },
+                    "storagePrimeKey": {
+                      "type": "string"
+                    },
+                    "storageRootURL": {
+                      "type": "string"
+                    },
+                    "subscriptionId": {
+                      "type": "string"
+                    },
+                    "tableMapResources": {
+                      "type": "string"
+                    },
+                    "templateContainer": {
+                      "type": "string"
+                    },
+                    "tenantId": {
+                      "type": "string"
+                    },
+                    "upn": {
+                      "type": "string"
+                    },
+                    "userParam1": {
+                      "type": "integer"
+                    },
+                    "userParam2": {
+                      "type": "integer"
+                    },
+                    "userQuerySelectionID": {
+                      "type": "string"
+                    },
+                    "vaultName": {
+                      "type": "string"
+                    },
+                    "workspaceID": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "description": "Parse input parameters to use them in future steps "
+            },
+            "Response:_status_and_datapool_ID": {
+              "runAfter": {
+                "Create_blob": [
+                  "Succeeded"
+                ],
+                "Update_DPLX_blob": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Response",
+              "kind": "Http",
+              "inputs": {
+                "body": {
+                  "OutBody": "@body('HTTP_post_request_to_create_external_datapool')",
+                  "statusCode": "@outputs('HTTP_post_request_to_create_external_datapool')['statusCode']"
+                },
+                "statusCode": 200
+              }
+            },
+            "Run_query_and_list_results": {
+              "runAfter": {
+                "HttpTriggerPythonCreateKustoQueryOptim": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "body": {
+                  "cluster": "@body('Parse_JSON_to_map_input_params')?['kustoCluster']",
+                  "csl": " @{body('HttpTriggerPythonCreateKustoQueryOptim')}",
+                  "db": "@body('Parse_JSON_to_map_input_params')?['kustoDatabase']"
+                },
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['kusto']['connectionId']"
+                  }
+                },
+                "method": "post",
+                "path": "/ListKustoResults/false"
+              }
+            },
+            "Update_DPLX_blob": {
+              "runAfter": {
+                "HttpTriggerPythonModifyModelJson": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "body": "@body('HttpTriggerPythonModifyModelJson')",
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azureblob']['connectionId']"
+                  }
+                },
+                "method": "post",
+                "path": "/datasets/default/files",
+                "queries": {
+                  "folderPath": "@body('Parse_JSON_to_map_input_params')?['containerName']",
+                  "name": "model.dplx",
+                  "queryParametersSingleEncoded": true
+                }
+              },
+              "runtimeConfiguration": {
+                "contentTransfer": {
+                  "transferMode": "Chunked"
+                }
+              }
+            }
+          },
+          "outputs": {}
+        },
+        "parameters": {
+          "$connections": {
+            "value": {
+              "azureblob": {
+                "connectionId": "[resourceId('Microsoft.Web/connections', parameters('connections_azureblob_name'))]",
+                "connectionName": "azureblob",
+                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', parameters('connections_azureblob_name'))]"
+
+              },
+              "azuretables": {
+                "connectionId": "[resourceId('Microsoft.Web/connections', parameters('connections_azuretables_name'))]",
+                "connectionName": "azuretables",
+                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', parameters('connections_azuretables_name'))]"
+              },
+              "kusto": {
+                "connectionId": "[resourceId('Microsoft.Web/connections', parameters('connections_kusto_name'))]",
+                "connectionName": "kusto",
+                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', parameters('connections_kusto_name'))]"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/sites', parameters('sites_be1byos1serviceApps_name'))]",
+        "[resourceId('Microsoft.Web/sites', parameters('sites_be1byos1serviceAppKeyVault_name'))]",
+        "[resourceId('Microsoft.Web/connections', parameters('connections_azureblob_name'))]",
+        "[resourceId('Microsoft.Web/connections', parameters('connections_azuretables_name'))]",
+        "[resourceId('Microsoft.Web/connections', parameters('connections_kusto_name'))]",
+        "[resourceId('Microsoft.Web/sites/sourcecontrols', parameters('sites_be1byos1serviceApps_name'), 'web')]",
+        "[resourceId('Microsoft.Web/sites/sourcecontrols', parameters('sites_be1byos1serviceAppKeyVault_name'), 'web')]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/78e47976-009f-4d4a-a961-6046cdabf459/resourceGroups/be_byos_rg/providers/Microsoft.Storage/storageAccounts/be1byos1sa'.",
+      "type": "Microsoft.Storage/storageAccounts",
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      },
+      "kind": "Storage",
+      "name": "[parameters('storageAccounts_be1byos1sa_name')]",
+      "apiVersion": "2018-03-01-preview",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "UsedByLogicApp": "refresh_data",
+        "DATAPOOL_INSTALLER": "1",
+        "DATAPOOL_REFRESH": "1",
+        "GET_USERS_LIST": "1"
+      },
+      "scale": null,
+      "properties": {
+        "networkAcls": {
+          "bypass": "AzureServices",
+          "virtualNetworkRules": [],
+          "ipRules": [],
+          "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": false,
+        "encryption": {
+          "services": {
+            "file": {
+              "enabled": true
+            },
+            "blob": {
+              "enabled": true
+            }
+          },
+          "keySource": "Microsoft.Storage"
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/78e47976-009f-4d4a-a961-6046cdabf459/resourceGroups/be_byos_rg/providers/Microsoft.Web/connections/azuretables'.",
+      "type": "Microsoft.Web/connections",
+      "name": "[parameters('connections_azuretables_name')]",
+      "apiVersion": "2016-06-01",
+      "location": "[resourceGroup().location]",
+      "scale": null,
+      "properties": {
+        "displayName": "connection_be1byos1sa",
+        "parameterValues": {
+          "storageaccount": "[parameters('storageAccounts_be1byos1sa_name')]",
+          "sharedkey": "[listKeys(variables('storageAccountid'),'2015-05-01-preview').key1]"
+        },
+        "api": {
+          "id": "[concat('subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', parameters('connections_azuretables_name'))]"
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/78e47976-009f-4d4a-a961-6046cdabf459/resourceGroups/be_byos_rg/providers/Microsoft.Web/connections/kusto'.",
+      "type": "Microsoft.Web/connections",
+      "name": "[parameters('connections_kusto_name')]",
+      "apiVersion": "2016-06-01",
+      "location": "[resourceGroup().location]",
+      "scale": null,
+      "properties": {
+        "displayName": "boefraty@microsoft.com",
+        "customParameterValues": {},
+        "api": {
+          "id": "[concat('subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', parameters('connections_kusto_name'))]"
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/78e47976-009f-4d4a-a961-6046cdabf459/resourceGroups/be_byos_rg/providers/Microsoft.Web/serverfarms/CentralUSPlan'.",
+      "type": "Microsoft.Web/serverfarms",
+      "sku": {
+        "name": "Y1",
+        "tier": "Dynamic",
+        "size": "Y1",
+        "family": "Y",
+        "capacity": 0
+      },
+      "kind": "functionapp",
+      "name": "[parameters('serverfarms_SomePlan_name')]",
+      "apiVersion": "2016-09-01",
+      //"location": "Central US",
+      "location": "[resourceGroup().location]",
+      "scale": null,
+      "properties": {
+        "name": "[parameters('serverfarms_SomePlan_name')]",
+        "workerTierName": null,
+        "adminSiteName": null,
+        "hostingEnvironmentProfile": null,
+        "perSiteScaling": false,
+        "reserved": false,
+        "targetWorkerCount": 0,
+        "targetWorkerSizeId": 0
+      },
+      "dependsOn": []
+    },
+    {
+      "apiVersion": "2016-03-01",
+      "type": "Microsoft.Web/sites",
+      "kind": "functionapp",
+      "name": "[parameters('sites_be1byos1serviceApps_name')]",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_SomePlan_name'))]",
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name'))]"
+      ],
+      "tags": {
+        "UsedByLogicApp": "inside_installer",
+        "DATAPOOL_INSTALLER": "1"
+      },
+      "properties": {
+        "name": "[parameters('sites_be1byos1serviceApps_name')]",
+        //"serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_SomePlan_name'))]",
+        "siteConfig": {
+          "appSettings": [
+            {
+              "name": "AzureWebJobsDashboard",
+              "value": "[concat('DefaultEndpointsProtocol=https;AccountName=',parameters('storageAccounts_be1byos1sa_name'),';AccountKey=',listKeys(resourceId(subscription().subscriptionId,resourceGroup().name,'Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name')), '2015-05-01-preview').key1)]"
+            },
+            {
+              "name": "AzureWebJobsStorage",
+              "value": "[concat('DefaultEndpointsProtocol=https;AccountName=',parameters('storageAccounts_be1byos1sa_name'),';AccountKey=',listKeys(resourceId(subscription().subscriptionId,resourceGroup().name,'Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name')), '2015-05-01-preview').key1)]"
+            },
+            {
+              "name": "FUNCTIONS_EXTENSION_VERSION",
+              "value": "~1"
+            },
+            {
+              "name": "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING",
+              "value": "[concat('DefaultEndpointsProtocol=https;AccountName=',parameters('storageAccounts_be1byos1sa_name'),';AccountKey=',listKeys(resourceId(subscription().subscriptionId,resourceGroup().name,'Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name')), '2015-05-01-preview').key1)]"
+            },
+            {
+              "name": "WEBSITE_CONTENTSHARE",
+              "value": "[concat(toLower(parameters('sites_be1byos1serviceApps_name')), uniqueString(resourceGroup().id))]"
+            },
+            {
+              "name": "WEBSITE_NODE_DEFAULT_VERSION",
+              "value": "6.5.0"
+            },
+            {
+              "name": "FUNCTION_APP_EDIT_MODE",
+              "value": "readwrite"
+            }
+          ]
+        },
+        "clientAffinityEnabled": false,
+        "reserved": false
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-08-01",
+          "name": "web",
+          "type": "sourcecontrols",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/Sites', parameters('sites_be1byos1serviceApps_name'))]"
+          ],
+          "properties": {
+            "RepoUrl": "[variables('repoURL')]",
+            "branch": "[variables('branch')]",
+            "IsManualIntegration": true
+          }
+        }
+      ]
+    }
+    ,
+    {
+      "comments": "Generalized from resource: '/subscriptions/78e47976-009f-4d4a-a961-6046cdabf459/resourceGroups/be_byos_rg/providers/Microsoft.Web/connections/azureblob'.",
+      "type": "Microsoft.Web/connections",
+      "name": "[parameters('connections_azureblob_name')]",
+      "apiVersion": "2016-06-01",
+      "location": "[resourceGroup().location]",
+      "scale": null,
+      "properties": {
+        "displayName": "connection_be1byos1sa",
+        "parameterValues": {
+          "accountName": "[parameters('storageAccounts_be1byos1sa_name')]",
+          "accessKey": "[listKeys(variables('storageAccountid'),'2015-05-01-preview').key1]"
+        },
+        "api": {
+          "id": "[concat('subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', parameters('connections_azureblob_name'))]"
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name'))]"
+      ]
+    },
+    {
+      "apiVersion": "2016-03-01",
+      "type": "Microsoft.Web/sites",
+      "kind": "functionapp",
+      "name": "[parameters('sites_be1byos1serviceAppKeyVault_name')]",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_SomePlan_name'))]",
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name'))]"
+      ],
+      "tags": {
+        "UsedByLogicApp": "inside_installer",
+        "DATAPOOL_INSTALLER": "1"
+      },
+      "properties": {
+        "name": "[parameters('sites_be1byos1serviceAppKeyVault_name')]",
+        //"serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_SomePlan_name'))]",
+        "siteConfig": {
+          "appSettings": [
+            {
+              "name": "AzureWebJobsDashboard",
+              "value": "[concat('DefaultEndpointsProtocol=https;AccountName=',parameters('storageAccounts_be1byos1sa_name'),';AccountKey=',listKeys(resourceId(subscription().subscriptionId,resourceGroup().name,'Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name')), '2015-05-01-preview').key1)]"
+            },
+            {
+              "name": "AzureWebJobsStorage",
+              "value": "[concat('DefaultEndpointsProtocol=https;AccountName=',parameters('storageAccounts_be1byos1sa_name'),';AccountKey=',listKeys(resourceId(subscription().subscriptionId,resourceGroup().name,'Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name')), '2015-05-01-preview').key1)]"
+            },
+            {
+              "name": "FUNCTIONS_EXTENSION_VERSION",
+              "value": "~1"
+            },
+            {
+              "name": "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING",
+              "value": "[concat('DefaultEndpointsProtocol=https;AccountName=',parameters('storageAccounts_be1byos1sa_name'),';AccountKey=',listKeys(resourceId(subscription().subscriptionId,resourceGroup().name,'Microsoft.Storage/storageAccounts', parameters('storageAccounts_be1byos1sa_name')), '2015-05-01-preview').key1)]"
+            },
+            {
+              "name": "WEBSITE_CONTENTSHARE",
+              "value": "[concat(toLower(parameters('sites_be1byos1serviceAppKeyVault_name')), uniqueString(resourceGroup().id))]"
+            },
+            {
+              "name": "WEBSITE_NODE_DEFAULT_VERSION",
+              "value": "6.5.0"
+            },
+            {
+              "name": "FUNCTION_APP_EDIT_MODE",
+              "value": "readwrite"
+            }
+          ]
+        },
+        "clientAffinityEnabled": false,
+        "reserved": false
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-08-01",
+          "name": "web",
+          "type": "sourcecontrols",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/Sites', parameters('sites_be1byos1serviceAppKeyVault_name'))]"
+          ],
+          "properties": {
+            "RepoUrl": "[variables('repoURL')]",
+            "branch": "[variables('branch')]",
+            "IsManualIntegration": true
+          }
+        }
+      ]
+    }
+
+  ],
+  "outputs": {}
+}

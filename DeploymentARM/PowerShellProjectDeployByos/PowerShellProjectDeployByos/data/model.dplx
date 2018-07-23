@@ -1,0 +1,109 @@
+{
+	"name": "262ef893-6fa2-45ee-92c5-b1b8392d07ab",
+	"entities": [{
+			"name": "datapool csv",
+			"description": "cv telemtry  datapool ",
+			"annotations": [{
+					"name": "queryGroupId",
+					"value": null
+				}
+			],
+			"isHidden": false,
+			"refreshPolicy": {
+				"$type": "FullRefreshPolicy",
+				"location": "datapool.csv",
+				"sourceQuery": "datapool csv"
+			},
+			"dataCategory": "Uncategorized",
+			"attributes": [
+			{
+					"name": "timestamp",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "dateTime",
+					"sourceColumnName": "timestamp"
+				},
+				{
+					"name": "PlatformName",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "string",
+					"sourceColumnName": "PlatformName"
+				},
+				{
+					"name": "ResourceName",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "string",
+					"sourceColumnName": "ResourceName"
+				}, 
+				{
+					"name": "CustomPropOfResource1",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "string",
+					"sourceColumnName": "CustomPropOfResource1"
+				},
+				{
+					"name": "ResourceVersion",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "string",
+					"sourceColumnName": "ResourceVersion"
+				},		
+				{
+					"name": "PlatformVersion",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "string",
+					"sourceColumnName": "PlatformVersion"
+				},	
+				{
+					"name": "location_Country",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "string",
+					"sourceColumnName": "location_Country"
+				}, {
+					"name": "location_StateOrProvince",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "string",
+					"sourceColumnName": "location_StateOrProvince"
+				},
+				{
+					"name": "location_City",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "string",
+					"sourceColumnName": "location_City"
+				},    {
+					"name": "sessionCount",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "int64",
+					"sourceColumnName": "sessionCount"
+				}, {
+					"name": "organizationCount",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "int64",
+					"sourceColumnName": "organizationCount"
+				}, 
+				{
+					"name": "userCount",
+					"isHidden": false,
+					"dataCategory": "Uncategorized",
+					"dataType": "int64",
+					"sourceColumnName": "userCount"
+				}
+			], 
+			"partitions": [{
+					"location": "https://be1byos1sa.blob.core.windows.net/static/datapool.csv",
+					"partitionDataQuery": "Account",
+					"source": null
+				}
+			] 
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "connections_kusto_name": {
+            "value": null
+        },
+        "connections_azureblob_name": {
+            "value": null
+        },
+        "vaults_be1byos1kv_name": {
+            "value": null
+        },
+        "serverfarms_WestUSPlan_name": {
+            "value": null
+        },
+        "connections_azuretables_name": {
+            "value": null
+        },
+        "serverfarms_CentralUSPlan_name": {
+            "value": null
+        },
+        "sites_be1byos1updateJson1fa_name": {
+            "value": null
+        },
+        "sites_be1create1secret1kv1fa_name": {
+            "value": null
+        },
+        "sites_be1byos1createParams1fa_name": {
+            "value": null
+        },
+        "storageAccounts_be1byos1sa_name": {
+            "value": null
+        },
+        "workflows_be_byos_get_users_la_name": {
+            "value": null
+        },
+        "sites_be1byos1createContainer1fa_name": {
+            "value": null
+        },
+        "workflows_be_insideInstaller_la_name": {
+            "value": null
+        },
+        "sites_be1byos1createQueryString1fa_name": {
+            "value": null
+        },
+        "workflows_be_byos_refresh_data_la_name": {
+            "value": null
+        },
+        "config_web_name": {
+            "value": null
+        },
+        "config_web_name_1": {
+            "value": null
+        },
+        "config_web_name_2": {
+            "value": null
+        },
+        "secrets_msftsecret2_name": {
+            "value": null
+        },
+        "config_web_name_3": {
+            "value": null
+        },
+        "config_web_name_4": {
+            "value": null
+        },
+        "hostNameBindings_be1byos1updatejson1fa.azurewebsites.net_name": {
+            "value": null
+        },
+        "hostNameBindings_be1create1secret1kv1fa.azurewebsites.net_name": {
+            "value": null
+        },
+        "hostNameBindings_be1byos1createparams1fa.azurewebsites.net_name": {
+            "value": null
+        },
+        "hostNameBindings_be1byos1createcontainer1fa.azurewebsites.net_name": {
+            "value": null
+        },
+        "hostNameBindings_be1byos1createquerystring1fa.azurewebsites.net_name": {
+            "value": null
+        }
+    }
+}
